@@ -255,7 +255,7 @@ export default function HeroSection({ onOpenAppointment }) {
             </a>
           </div>
 
-          {/* Trust Badges Strip (Inspired by Master Ganesh Guruji & Pandith Gowtham) */}
+          {/* Trust Badges Strip (Inspired by Master Ganesh Guruji & Pandith Astrologer) */}
           <div style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))',

@@ -11,19 +11,19 @@ const legacyServicesData = {
     title: "Relationship Problems Solution",
     subtitle: "Resolve Misunderstandings, Arguments & Rekindle Eternal Affection",
     image: "https://pandithgowtham.com/wp-content/uploads/2025/07/qdlimvfjewyrob9b8rfg.webp",
-    description: "Are you and your partner constantly arguing over trivial matters? Has emotional distance grown between you? Pandith Gowtham offers profound Vedic horoscope compatibility matching and planetary remedies to eliminate friction and restore true love."
+    description: "Are you and your partner constantly arguing over trivial matters? Has emotional distance grown between you? Pandith Astrologer offers profound Vedic horoscope compatibility matching and planetary remedies to eliminate friction and restore true love."
   },
   "/psychic-reading": {
     title: "Psychic Reading in Canada",
     subtitle: "Clairvoyant Foresight for Love, Destiny, Career & Finances",
     image: "https://pandithgowtham.com/wp-content/uploads/2025/07/vpvftb7rgcxglzn2a0eg.webp",
-    description: "Receive deep clarity on your past, present, and future. Pandith Gowtham utilizes inherited clairvoyant psychic perception, palmistry, and Vedic astrology charts to reveal hidden opportunities and protect you from upcoming hardships."
+    description: "Receive deep clarity on your past, present, and future. Pandith Astrologer utilizes inherited clairvoyant psychic perception, palmistry, and Vedic astrology charts to reveal hidden opportunities and protect you from upcoming hardships."
   },
   "/spiritual-cleansing": {
     title: "Spiritual Healing & Cleansing",
     subtitle: "Restore Inner Harmony, Karmic Balance & Positive Vibrations",
     image: "https://pandithgowtham.com/wp-content/uploads/2025/07/pqgtjgbbnggd7sja2xsq.webp",
-    description: "Clear emotional distress, chronic anxiety, and heavy psychic burdens with sacred Vedic mantras, chakra balancing, and ancestral spiritual healing performed by Pandith Gowtham."
+    description: "Clear emotional distress, chronic anxiety, and heavy psychic burdens with sacred Vedic mantras, chakra balancing, and ancestral spiritual healing performed by Pandith Astrologer."
   },
   "/vashikaran-specialist": {
     title: "Vashikaran Specialist in Canada",
@@ -35,25 +35,25 @@ const legacyServicesData = {
     title: "Get Ex Love Back Specialist",
     subtitle: "Bring Back Your Ex Partner & Reignite True Passion Fast",
     image: "https://pandithgowtham.com/wp-content/uploads/2025/07/qdlimvfjewyrob9b8rfg.webp",
-    description: "Experiencing heartbreak after a sudden separation or breakup? Pandith Gowtham identifies planetary hindrances causing third-party interference and uses proven love spells and astrological remedies to bring your lover back."
+    description: "Experiencing heartbreak after a sudden separation or breakup? Pandith Astrologer identifies planetary hindrances causing third-party interference and uses proven love spells and astrological remedies to bring your lover back."
   },
   "/black-magic-removal": {
     title: "Black Magic & Evil Spirit Removal",
     subtitle: "Powerful Vedic Protection Against Dark Occult Energies & Hexes",
     image: "https://pandithgowtham.com/wp-content/uploads/2025/07/hjaobubgx1dq3ngklzsc.webp",
-    description: "If you are suffering from unexplained health problems, business collapses, recurring nightmares, or domestic discord, you may be affected by black magic or evil spirits. Pandith Gowtham provides guaranteed removal rituals and lifelong shields."
+    description: "If you are suffering from unexplained health problems, business collapses, recurring nightmares, or domestic discord, you may be affected by black magic or evil spirits. Pandith Astrologer provides guaranteed removal rituals and lifelong shields."
   },
   "/negative-energy-removal": {
     title: "Negative Energy Removal",
     subtitle: "Purify Your Aura, Home & Business from Envious Vibrations",
     image: "https://pandithgowtham.com/wp-content/uploads/2025/07/dnmorazmguyea2a6fwxo.webp",
-    description: "Banish lingering dark vibrations, depression, and bad luck. Pandith Gowtham's powerful yantras and havans cleanse your living space, inviting wealth, prosperity, and peace of mind."
+    description: "Banish lingering dark vibrations, depression, and bad luck. Pandith Astrologer's powerful yantras and havans cleanse your living space, inviting wealth, prosperity, and peace of mind."
   },
   "/jealousy-and-curse-removal": {
     title: "Jealousy & Curse Removal Specialist",
     subtitle: "Neutralize Evil Eye (Buri Nazar), Family Curses & Rival Malice",
     image: "https://pandithgowtham.com/wp-content/uploads/2025/07/lcvmdq6ytk4h3o4pijrf.webp",
-    description: "Protect your loved ones and your hard-earned achievements from destructive envy and ancestral curses. Pandith Gowtham's divine protective talismans repel all hostile energies permanently."
+    description: "Protect your loved ones and your hard-earned achievements from destructive envy and ancestral curses. Pandith Astrologer's divine protective talismans repel all hostile energies permanently."
   }
 };
 
@@ -75,7 +75,7 @@ export default function GowthamServiceDetailPage() {
   const title = matchedService ? matchedService.title : (legacy ? legacy.title : "Vedic Astrology Service");
   const subtitle = matchedService ? matchedService.subtitle : (legacy ? legacy.subtitle : "Astrological Solutions Across Canada");
   const image = matchedService ? matchedService.image : (legacy ? legacy.image : "https://pandithgowtham.com/wp-content/uploads/2025/07/vpvftb7rgcxglzn2a0eg.webp");
-  const description = matchedService ? (matchedService.fullDesc || matchedService.shortDesc) : (legacy ? legacy.description : "Contact Pandith Gowtham for personal Vedic guidance.");
+  const description = matchedService ? (matchedService.fullDesc || matchedService.shortDesc) : (legacy ? legacy.description : "Contact Pandith Astrologer for personal Vedic guidance.");
   const remedies = matchedService ? matchedService.remedies : ["Personal Horoscope Reading", "Vedic Dosha Pacification", "Protective Yantra", "Spiritual Counseling"];
   const timing = matchedService ? matchedService.timing : "Immediate consultation available";
 
@@ -90,7 +90,7 @@ export default function GowthamServiceDetailPage() {
       }}>
         <div className="elementor-container">
           <div className="img-heading-pill" style={{ background: 'rgba(255, 255, 255, 0.15)', boxShadow: 'none' }}>
-            <img src={brandConfig.faviconUrl} alt="pandith gowtham favicon" />
+            <img src={brandConfig.faviconUrl} alt="pandith astrologer favicon" />
             <span style={{ color: '#ffffff' }}>Pandith GOWTHAM Services</span>
           </div>
           <h1 style={{
@@ -144,12 +144,12 @@ export default function GowthamServiceDetailPage() {
             {/* Content & Remedies */}
             <div>
               <div className="img-heading-pill">
-                <img src={brandConfig.faviconUrl} alt="pandith gowtham favicon" />
+                <img src={brandConfig.faviconUrl} alt="pandith astrologer favicon" />
                 <span>guaranteed solutions</span>
               </div>
 
               <h2 className="gowtham-section-title" style={{ textAlign: 'left', marginBottom: '20px' }}>
-                Why Consult Pandith Gowtham for {title}?
+                Why Consult Pandith Astrologer for {title}?
               </h2>
 
               <p style={{ fontSize: '16px', color: '#444444', lineHeight: 1.8, marginBottom: '25px' }}>

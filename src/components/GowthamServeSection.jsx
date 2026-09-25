@@ -57,7 +57,7 @@ export default function GowthamServeSection() {
           <div className="img-heading-pill">
             <img 
               src={brandConfig.faviconUrl} 
-              alt="pandith gowtham favicon" 
+              alt="pandith astrologer favicon" 
             />
             <span>Pandith GOWTHAM best services</span>
           </div>
@@ -67,7 +67,7 @@ export default function GowthamServeSection() {
           </h2>
 
           <p style={{ color: '#2b0404', fontSize: '15px', lineHeight: 1.7, marginBottom: '20px' }}>
-            Pandith Gowtham offers precise horoscope readings, palmistry, face reading, and future predictions to guide your life path. Specializing in love spells, vashikaran, marriage solutions, and black magic removal, he also provides career, business, and spiritual healing services. With ancient wisdom and proven remedies, he brings clarity, protection, and success to your journey.
+            Pandith Astrologer offers precise horoscope readings, palmistry, face reading, and future predictions to guide your life path. Specializing in love spells, vashikaran, marriage solutions, and black magic removal, he also provides career, business, and spiritual healing services. With ancient wisdom and proven remedies, he brings clarity, protection, and success to your journey.
           </p>
         </div>
 
@@ -80,7 +80,7 @@ export default function GowthamServeSection() {
               <div className="card-top-badge">
                 <img 
                   src="https://pandithgowtham.com/wp-content/uploads/2025/07/pandith.webp" 
-                  alt="Pandith Gowtham" 
+                  alt="Pandith Astrologer" 
                 />
               </div>
 

@@ -19,7 +19,7 @@ export default function Navbar({ onOpenAppointment }) {
 
   return (
     <>
-      {/* 1. TOP RUNNING SACRED MARQUEE (Inspired by Pandith Gowtham) */}
+      {/* 1. TOP RUNNING SACRED MARQUEE (Inspired by Pandith Astrologer) */}
       <div className="marquee-wrapper">
         <div className="marquee-content">
           <span className="marquee-item"><Sparkles size={14} /> PSYCHIC READING</span>

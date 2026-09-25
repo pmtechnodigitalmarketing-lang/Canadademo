@@ -50,7 +50,7 @@ export default function GowthamNavbar() {
           <Link to="/" onClick={closeMenu} className="gowtham-logo">
             <img 
               src={brandConfig.logoUrl} 
-              alt="Pandith Gowtham" 
+              alt="Pandith Astrologer" 
               loading="eager"
             />
           </Link>

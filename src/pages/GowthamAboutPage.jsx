@@ -25,7 +25,7 @@ export default function GowthamAboutPage() {
             color: 'var(--e-global-color-secondary)',
             marginBottom: '10px'
           }}>
-            About Pandith Gowtham
+            About Pandith Astrologer
           </h1>
           <p style={{ fontSize: '16px', color: 'rgba(255,255,255,0.9)' }}>
             Best Astrologer, Psychic Reader &amp; Spiritual Healer in Canada Over 25+ Years

@@ -20,7 +20,7 @@ function App() {
       <ScrollToTop />
       <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         
-        {/* Exact Pandith Gowtham Topbar & Sticky Header */}
+        {/* Exact Pandith Astrologer Topbar & Sticky Header */}
         <GowthamNavbar />
 
         {/* Dynamic Route Content */}
@@ -60,7 +60,7 @@ function App() {
           </Routes>
         </main>
 
-        {/* Exact Pandith Gowtham Footer */}
+        {/* Exact Pandith Astrologer Footer */}
         <GowthamFooter />
 
         {/* Floating Call, WhatsApp & Scroll-to-Top Triggers */}
