@@ -51,41 +51,50 @@ export default function GowthamTestimonials() {
         </p>
 
         {/* Reviews Grid */}
-        <div className="reviews-grid">
-          {reviews.map((rev, idx) => (
-            <div key={idx} className="review-card">
-              
-              <p className="review-card-text">
-                "{rev.text}"
-              </p>
-
-              <div>
-                <img 
-                  src={rev.avatar} 
-                  alt={rev.name} 
-                  className="review-card-author-img"
-                  loading="lazy"
-                />
+        <div className="reviews-grid-container">
+          <div className="reviews-grid">
+            {[...reviews, ...reviews].map((rev, idx) => (
+              <div key={idx} className="review-card reviews-marquee-card">
                 
-                <h4 className="review-card-name">
-                  {rev.name}
-                </h4>
-
-                <p className="review-card-location">
-                  {rev.location}
+                <p className="review-card-text">
+                  "{rev.text}"
                 </p>
 
-                <div className="review-stars">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} aria-hidden="true" width="16" height="16" viewBox="0 0 1000 1000" fill="currentColor">
-                      <path d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"></path>
-                    </svg>
-                  ))}
-                </div>
-              </div>
+                <div>
+                  <img 
+                    src={rev.avatar} 
+                    alt={rev.name} 
+                    className="review-card-author-img"
+                    loading="lazy"
+                  />
+                  
+                  <h4 className="review-card-name">
+                    {rev.name}
+                  </h4>
 
-            </div>
-          ))}
+                  <p className="review-card-location">
+                    {rev.location}
+                  </p>
+
+                  <div className="review-stars">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} aria-hidden="true" width="16" height="16" viewBox="0 0 1000 1000" fill="currentColor">
+                        <path d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"></path>
+                      </svg>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Google Symbol on bottom left */}
+                <img 
+                  src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" 
+                  alt="Google Review" 
+                  className="google-review-badge"
+                />
+
+              </div>
+            ))}
+          </div>
         </div>
 
       </div>
