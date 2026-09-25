@@ -242,6 +242,26 @@ img {
   transform: translateY(-2px);
 }
 
+.header-appointment-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--e-global-color-secondary);
+  color: #1a1a1a !important;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+  transition: all 0.3s ease;
+}
+
+.header-appointment-btn:hover {
+  background-color: #cda831;
+  transform: translateY(-2px);
+}
+
 /* ==========================================================================
    IMG-HEADING PILL BADGE (Icon Box Pill)
    ========================================================================== */

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Phone, ChevronDown, Menu, X } from 'lucide-react';
+import { Phone, ChevronDown, Menu, X, Calendar } from 'lucide-react';
 import brandConfig from '../data/brandConfig';
 
 const canadaRegions = [
@@ -217,12 +217,6 @@ export default function GowthamNavbar() {
                   Contact us
                 </Link>
               </li>
-
-              <li>
-                <Link to="/book-an-appointment" className={location.pathname === '/book-an-appointment' ? 'active' : ''}>
-                  Book an Appointment
-                </Link>
-              </li>
             </ul>
           </nav>
 
@@ -230,8 +224,13 @@ export default function GowthamNavbar() {
           <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
             <a href={`tel:${brandConfig.phoneRaw}`} className="header-phone-btn">
               <Phone size={16} />
-              <span>{brandConfig.phone}</span>
+              <span>Call Now</span>
             </a>
+            
+            <Link to="/contact-us" className="header-appointment-btn" style={{ textDecoration: 'none' }}>
+              <Calendar size={16} />
+              <span>Book Appointment</span>
+            </Link>
 
             {/* Mobile Hamburger */}
             <button
@@ -261,13 +260,16 @@ export default function GowthamNavbar() {
               <li><Link to="/services" onClick={closeMenu} style={{ fontWeight: '700', color: '#1a1a1a', fontSize: '17px' }}>Services</Link></li>
               <li><a href="#locations" onClick={closeMenu} style={{ fontWeight: '700', color: '#1a1a1a', fontSize: '17px' }}>Locations</a></li>
               <li><Link to="/contact-us" onClick={closeMenu} style={{ fontWeight: '700', color: '#1a1a1a', fontSize: '17px' }}>Contact us</Link></li>
-              <li><Link to="/book-an-appointment" onClick={closeMenu} style={{ fontWeight: '700', color: '#1a1a1a', fontSize: '17px' }}>Book an Appointment</Link></li>
             </ul>
-            <div style={{ marginTop: '20px' }}>
+            <div style={{ marginTop: '20px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
               <a href={`tel:${brandConfig.phoneRaw}`} className="header-phone-btn" style={{ width: '100%', justifyContent: 'center' }}>
                 <Phone size={16} />
-                <span>Call Now: {brandConfig.phone}</span>
+                <span>Call Now</span>
               </a>
+              <Link to="/contact-us" className="header-appointment-btn" style={{ width: '100%', justifyContent: 'center', textDecoration: 'none' }} onClick={closeMenu}>
+                <Calendar size={16} />
+                <span>Book Appointment</span>
+              </Link>
             </div>
           </div>
         )}

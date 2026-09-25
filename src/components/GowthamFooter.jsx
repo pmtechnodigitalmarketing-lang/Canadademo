@@ -92,10 +92,6 @@ export default function GowthamFooter() {
               <MapPin size={18} className="footer-icon" />
               <span>{brandConfig.address}</span>
             </div>
-            
-            <Link to="/book-an-appointment" className="footer-cta-btn">
-              Book an Appointment
-            </Link>
           </div>
 
         </div>

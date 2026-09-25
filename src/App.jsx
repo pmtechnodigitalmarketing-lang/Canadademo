@@ -11,7 +11,7 @@ import GowthamAboutPage from './pages/GowthamAboutPage';
 import Services from './pages/Services';
 import GowthamServiceDetailPage from './pages/GowthamServiceDetailPage';
 import GowthamContactPage from './pages/GowthamContactPage';
-import GowthamAppointmentPage from './pages/GowthamAppointmentPage';
+
 import GowthamLocationDetailPage from './pages/GowthamLocationDetailPage';
 
 function App() {
@@ -53,7 +53,7 @@ function App() {
             {/* Contact & Appointment */}
             <Route path="/contact-us" element={<GowthamContactPage />} />
             <Route path="/contact" element={<Navigate to="/contact-us" replace />} />
-            <Route path="/book-an-appointment" element={<GowthamAppointmentPage />} />
+
 
             {/* Wildcard redirect */}
             <Route path="*" element={<Navigate to="/" replace />} />
