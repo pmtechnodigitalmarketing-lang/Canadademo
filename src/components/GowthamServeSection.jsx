@@ -59,7 +59,7 @@ export default function GowthamServeSection() {
               src={brandConfig.faviconUrl} 
               alt="pandith astrologer favicon" 
             />
-            <span>Pandith GOWTHAM best services</span>
+            <span>Pandith best services</span>
           </div>
 
           <h2 className="gowtham-section-title" style={{ color: 'var(--e-global-color-darkred)' }}>
@@ -135,3 +135,4 @@ export default function GowthamServeSection() {
     </section>
   );
 }
+

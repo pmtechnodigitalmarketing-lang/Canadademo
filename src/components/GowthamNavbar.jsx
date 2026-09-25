@@ -65,12 +65,45 @@ export default function GowthamNavbar() {
         <div className="header-inner">
           
           {/* Logo */}
-          <Link to="/" onClick={closeMenu} className="gowtham-logo">
-            <img 
-              src={brandConfig.logoUrl} 
-              alt="Pandith Astrologer" 
-              loading="eager"
-            />
+          <Link to="/" onClick={closeMenu} className="gowtham-logo" style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', textDecoration: 'none' }}>
+            <div style={{
+              width: '52px',
+              height: '52px',
+              borderRadius: '50%',
+              background: 'radial-gradient(circle, var(--e-global-color-primary) 0%, #2b060d 100%)',
+              border: '2px solid var(--e-global-color-secondary)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              boxShadow: '0 0 15px rgba(212, 175, 55, 0.4)',
+              flexShrink: 0
+            }}>
+              <span style={{ fontFamily: 'var(--font-heading)', color: 'var(--e-global-color-secondary)', fontSize: '1.4rem', fontWeight: '900' }}>
+                ॐ
+              </span>
+            </div>
+            <div>
+              <div style={{
+                fontFamily: 'var(--font-heading)',
+                fontSize: 'clamp(1.15rem, 2vw, 1.45rem)',
+                fontWeight: '800',
+                color: '#000000',
+                letterSpacing: '0.04em',
+                lineHeight: 1.15
+              }}>
+                {brandConfig.name.split(' ')[0]} <span style={{ color: 'var(--e-global-color-primary)' }}>{brandConfig.name.split(' ').slice(1).join(' ')}</span>
+              </div>
+              <div style={{
+                fontSize: '0.72rem',
+                color: 'var(--e-global-color-text)',
+                letterSpacing: '0.12em',
+                textTransform: 'uppercase',
+                marginTop: '0.15rem',
+                fontWeight: 600
+              }}>
+                Canadian Astrologer
+              </div>
+            </div>
           </Link>
 
           {/* Desktop Nav */}

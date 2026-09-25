@@ -56,7 +56,7 @@ export default function GowthamWhyChooseUs() {
               src={brandConfig.faviconUrl} 
               alt="pandith astrologer favicon" 
             />
-            <span>Pandith GOWTHAM</span>
+            <span>Pandith</span>
           </div>
 
           <h2 className="gowtham-section-title">
@@ -117,3 +117,4 @@ export default function GowthamWhyChooseUs() {
     </section>
   );
 }
+

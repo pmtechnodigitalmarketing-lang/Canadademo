@@ -91,7 +91,7 @@ export default function GowthamServiceDetailPage() {
         <div className="elementor-container">
           <div className="img-heading-pill" style={{ background: 'rgba(255, 255, 255, 0.15)', boxShadow: 'none' }}>
             <img src={brandConfig.faviconUrl} alt="pandith astrologer favicon" />
-            <span style={{ color: '#ffffff' }}>Pandith GOWTHAM Services</span>
+            <span style={{ color: '#ffffff' }}>Pandith Services</span>
           </div>
           <h1 style={{
             fontFamily: 'var(--font-heading)',
@@ -247,3 +247,4 @@ export default function GowthamServiceDetailPage() {
     </div>
   );
 }
+
