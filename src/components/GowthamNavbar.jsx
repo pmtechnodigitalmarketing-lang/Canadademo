@@ -3,6 +3,24 @@ import { Link, useLocation } from 'react-router-dom';
 import { Phone, ChevronDown, Menu, X } from 'lucide-react';
 import brandConfig from '../data/brandConfig';
 
+const canadaRegions = [
+  "Alberta", "British Columbia", "Manitoba", "New Brunswick", "Newfoundland and Labrador",
+  "Nova Scotia", "Ontario", "Prince Edward Island", "Quebec", "Saskatchewan",
+  "Northwest Territories", "Nunavut", "Yukon"
+];
+
+const standardServices = [
+  { id: "vedic-astrology-reading", name: "Astrologer" },
+  { id: "ex-love-back", name: "Ex Love Back" },
+  { id: "marriage-solutions", name: "Husband and Wife Problem Solution" },
+  { id: "love-marriage-specialist", name: "Love Marriage Specialist" },
+  { id: "black-magic-removal", name: "Black Magic Removal" },
+  { id: "negative-energy-cleansing", name: "Negative Energy Removal" },
+  { id: "love-spells", name: "Love Spell Caster" },
+  { id: "voodoo-expert", name: "Voodoo Removal" },
+  { id: "jealous-curses-removal", name: "Curse Removal" }
+];
+
 export default function GowthamNavbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [servicesDropdown, setServicesDropdown] = useState(false);
@@ -115,7 +133,7 @@ export default function GowthamNavbar() {
                 )}
               </li>
 
-              {/* Locations Dropdown with Submenus (Edmonton & Calgary) */}
+              {/* Locations Dropdown with Submenus */}
               <li
                 onMouseEnter={() => setLocationsDropdown(true)}
                 onMouseLeave={() => { setLocationsDropdown(false); setActiveSubCity(null); }}
@@ -127,51 +145,36 @@ export default function GowthamNavbar() {
 
                 {locationsDropdown && (
                   <ul className="dropdown-menu">
-                    <li 
-                      onMouseEnter={() => setActiveSubCity('edmonton')}
-                      onMouseLeave={() => setActiveSubCity(null)}
-                    >
-                      <a href="#edmonton" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                        <span>Edmonton</span>
-                        <span>&rsaquo;</span>
-                      </a>
+                    {canadaRegions.map((region) => {
+                      const regionSlug = region.toLowerCase().replace(/\s+/g, '-');
+                      return (
+                        <li 
+                          key={region}
+                          onMouseEnter={() => setActiveSubCity(regionSlug)}
+                          onMouseLeave={() => setActiveSubCity(null)}
+                        >
+                          <a href={`#${regionSlug}`} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                            <span>{region}</span>
+                            <span>&rsaquo;</span>
+                          </a>
 
-                      {activeSubCity === 'edmonton' && (
-                        <ul className="dropdown-sub">
-                          <li><Link to="/locations/ex-love-back-in-edmonton" onClick={closeMenu}>Ex Love Back in Edmonton</Link></li>
-                          <li><Link to="/locations/husband-and-wife-problem-solution-in-edmonton" onClick={closeMenu}>Husband and Wife Problem Solution in Edmonton</Link></li>
-                          <li><Link to="/locations/love-marriage-specialist-in-edmonton" onClick={closeMenu}>Love Marriage Specialist in Edmonton</Link></li>
-                          <li><Link to="/locations/black-magic-removal-in-edmonton" onClick={closeMenu}>Black Magic Removal in Edmonton</Link></li>
-                          <li><Link to="/locations/astrologer-in-edmonton" onClick={closeMenu}>Astrologer in Edmonton</Link></li>
-                          <li><Link to="/locations/negative-energy-removal-in-edmonton" onClick={closeMenu}>Negative Energy Removal in Edmonton</Link></li>
-                          <li><Link to="/locations/love-spell-caster-in-edmonton" onClick={closeMenu}>Love Spell Caster in Edmonton</Link></li>
-                          <li><Link to="/locations/voodoo-removal-in-edmonton" onClick={closeMenu}>Voodoo Removal in Edmonton</Link></li>
-                          <li><Link to="/locations/curse-removal-in-edmonton" onClick={closeMenu}>Curse Removal in Edmonton</Link></li>
-                        </ul>
-                      )}
-                    </li>
-
-                    <li 
-                      onMouseEnter={() => setActiveSubCity('calgary')}
-                      onMouseLeave={() => setActiveSubCity(null)}
-                    >
-                      <a href="#calgary" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                        <span>Calgary</span>
-                        <span>&rsaquo;</span>
-                      </a>
-
-                      {activeSubCity === 'calgary' && (
-                        <ul className="dropdown-sub">
-                          <li><Link to="/locations/psychic-in-calgary" onClick={closeMenu}>Psychic in Calgary</Link></li>
-                          <li><Link to="/locations/love-problem-solution-in-calgary" onClick={closeMenu}>Love Problem Solution in Calgary</Link></li>
-                          <li><Link to="/locations/ex-love-back-in-calgary" onClick={closeMenu}>Ex Love Back in Calgary</Link></li>
-                          <li><Link to="/locations/voodoo-removal-in-calgary" onClick={closeMenu}>Voodoo Removal in Calgary</Link></li>
-                          <li><Link to="/locations/best-astrologer-in-calgary" onClick={closeMenu}>Best Astrologer in Calgary</Link></li>
-                          <li><Link to="/locations/negative-energy-removal-in-calgary" onClick={closeMenu}>Negative Energy Removal in Calgary</Link></li>
-                          <li><Link to="/locations/husband-and-wife-problem-solution-in-calgary" onClick={closeMenu}>Husband and Wife Problem Solution in Calgary</Link></li>
-                        </ul>
-                      )}
-                    </li>
+                          {activeSubCity === regionSlug && (
+                            <ul className="dropdown-sub" style={{ top: 0, minWidth: '320px' }}>
+                              {standardServices.map((service) => {
+                                const fullSlug = `${service.id}-in-${regionSlug}`;
+                                return (
+                                  <li key={service.id}>
+                                    <Link to={`/locations/${fullSlug}`} onClick={closeMenu}>
+                                      {service.name} in {region}
+                                    </Link>
+                                  </li>
+                                );
+                              })}
+                            </ul>
+                          )}
+                        </li>
+                      );
+                    })}
                   </ul>
                 )}
               </li>
