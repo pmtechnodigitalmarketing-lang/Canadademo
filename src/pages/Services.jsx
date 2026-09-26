@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import { Search, Phone, ArrowRight, CheckCircle2, Sparkles, Clock, Compass, Shield, MessageCircle, X } from 'lucide-react';
 import brandConfig from '../data/brandConfig';
 import servicesData from '../data/servicesData';
-import GowthamWhyChooseUs from '../components/GowthamWhyChooseUs';
-import GowthamContactFAQ from '../components/GowthamContactFAQ';
+import WhyChooseUs from '../components/WhyChooseUs';
+import ContactFAQ from '../components/ContactFAQ';
 
 const categories = [
   { key: 'all', label: `All (${servicesData.length}) Services` },
@@ -25,7 +25,7 @@ const serviceTestimonials = [
     client: "Elena & Marcus",
     avatar: "/images/testimonials/elena.jpg",
     location: "Calgary, Alberta",
-    quote: "Marcus had blocked me everywhere for 7 months after heavy interference from his relatives. Pandith Astrologer performed a 3-night remote Venusian pooja with our photographs. On the 2nd night at 2:15 AM, Marcus unblocked me, called sobbing, and confessed he couldn't live without me. We are now happily reunited!",
+    quote: `Marcus had blocked me everywhere for 7 months after heavy interference from his relatives. ${brandConfig.name} performed a 3-night remote Venusian pooja with our photographs. On the 2nd night at 2:15 AM, Marcus unblocked me, called sobbing, and confessed he couldn't live without me. We are now happily reunited!`,
     metrics: "7 Months Separation → Reunited in 42 Hours"
   },
   {
@@ -38,7 +38,7 @@ const serviceTestimonials = [
     client: "Vikramaditya S.",
     avatar: "/images/testimonials/vikram.jpg",
     location: "Edmonton, Alberta",
-    quote: "For nearly two years, my home felt suffocating. Unexplained physical illness, sharp sudden losses in business, and horrific recurring nightmares. Pandith Astrologer identified an envious curse sent by a rival. Within 24 hours of his Kavach consecration, the oppressive weight lifted completely.",
+    quote: `For nearly two years, my home felt suffocating. Unexplained physical illness, sharp sudden losses in business, and horrific recurring nightmares. ${brandConfig.name} identified an envious curse sent by a rival. Within 24 hours of his Kavach consecration, the oppressive weight lifted completely.`,
     metrics: "2-Year Affliction → Shielded in 24 Hours"
   },
   {
@@ -51,7 +51,7 @@ const serviceTestimonials = [
     client: "Pooja & Rohan K.",
     avatar: "/images/testimonials/rajesh-priya.jpg",
     location: "Toronto, Canada",
-    quote: "Our marriage was on the brink of divorce due to daily violent arguments and extreme anger outbursts. Pandith Astrologer detected a high-intensity Mangal Dosha in my 7th house and conducted a specialized distance ritual. The hostility evaporated, and love and mutual respect returned to our home.",
+    quote: `Our marriage was on the brink of divorce due to daily violent arguments and extreme anger outbursts. ${brandConfig.name} detected a high-intensity Mangal Dosha in my 7th house and conducted a specialized distance ritual. The hostility evaporated, and love and mutual respect returned to our home.`,
     metrics: "Divorce Halted → Lifelong Harmony Restored"
   },
   {
@@ -64,7 +64,7 @@ const serviceTestimonials = [
     client: "Michael T.",
     avatar: "/images/testimonials/michael.jpg",
     location: "Vancouver, BC",
-    quote: "My commercial logistics firm was drowning in $230,000 bad debt and stalled contracts during my Rahu Dasha. Pandith Astrologer created an energized Surya Yantra and performed a Maha Lakshmi Yagya on my birth nakshatra. Within 10 days, 3 stalled contracts cleared simultaneously!",
+    quote: `My commercial logistics firm was drowning in $230,000 bad debt and stalled contracts during my Rahu Dasha. ${brandConfig.name} created an energized Surya Yantra and performed a Maha Lakshmi Yagya on my birth nakshatra. Within 10 days, 3 stalled contracts cleared simultaneously!`,
     metrics: "$230k Stalled Debt → 3 Contracts Cleared"
   },
   {
@@ -77,7 +77,7 @@ const serviceTestimonials = [
     client: "Simran & Harpreet",
     avatar: "/images/testimonials/harpreet-sonia.jpg",
     location: "Calgary, AB",
-    quote: "Our 4-month-old infant would cry hysterically every night from midnight to 3 AM without any medical cause. Pandith Astrologer immediately diagnosed severe Buri Nazar and performed a protective distance Hanuman Kavach recitation. That very night, our baby slept peacefully through till morning.",
+    quote: `Our 4-month-old infant would cry hysterically every night from midnight to 3 AM without any medical cause. ${brandConfig.name} immediately diagnosed severe Buri Nazar and performed a protective distance Hanuman Kavach recitation. That very night, our baby slept peacefully through till morning.`,
     metrics: "Severe Disturbance → Peaceful Deep Sleep"
   },
   {
@@ -90,7 +90,7 @@ const serviceTestimonials = [
     client: "Devraj & Ananya",
     avatar: "/images/testimonials/devraj.jpg",
     location: "Edmonton, AB",
-    quote: "Both families were fiercely opposed to our union for 14 months and threatened disownment. Pandith Astrologer conducted a Kamakhya Mohini Sankalpam. On the fifth day, my strictly traditional father called Devraj's family to invite them with complete goodwill. We were happily married!",
+    quote: `Both families were fiercely opposed to our union for 14 months and threatened disownment. ${brandConfig.name} conducted a Kamakhya Mohini Sankalpam. On the fifth day, my strictly traditional father called Devraj's family to invite them with complete goodwill. We were happily married!`,
     metrics: "14-Month Opposition → Blessed Marriage in 5 Days"
   },
   {
@@ -103,7 +103,7 @@ const serviceTestimonials = [
     client: "Carlos Mendez",
     avatar: "/images/testimonials/carlos.jpg",
     location: "Red Deer, Alberta",
-    quote: "I sent photos of both palms via WhatsApp with total skepticism. Pandith Astrologer named my exact surgery from age 14, my mother's passing month, and predicted a sudden international tech buyout for my venture. The buyout happened precisely as he foresaw down to the week!",
+    quote: `I sent photos of both palms via WhatsApp with total skepticism. ${brandConfig.name} named my exact surgery from age 14, my mother's passing month, and predicted a sudden international tech buyout for my venture. The buyout happened precisely as he foresaw down to the week!`,
     metrics: "100% Uncanny Accuracy on Past & Future"
   },
   {
@@ -116,7 +116,7 @@ const serviceTestimonials = [
     client: "Kavita S.",
     avatar: "/images/testimonials/kavita.jpg",
     location: "Lethbridge, AB",
-    quote: "My husband of 11 years had walked out for another woman, ignoring our two young children. Pandith Astrologer performed an ancestral Mohini Shukra remedy. Within 48 hours, my husband arrived at our doorstep in tears begging for forgiveness, and has dedicated himself completely to our family.",
+    quote: `My husband of 11 years had walked out for another woman, ignoring our two young children. ${brandConfig.name} performed an ancestral Mohini Shukra remedy. Within 48 hours, my husband arrived at our doorstep in tears begging for forgiveness, and has dedicated himself completely to our family.`,
     metrics: "Infidelity & Departure → Reunited in 48 Hours"
   }
 ];
@@ -167,7 +167,7 @@ export default function Services() {
         <div className="elementor-container" style={{ position: 'relative', zIndex: 1 }}>
           
           <div className="img-heading-pill" style={{ background: 'rgba(255, 255, 255, 0.15)', boxShadow: '0 2px 10px rgba(0,0,0,0.2)' }}>
-            <img src={brandConfig.faviconUrl} alt="pandith astrologer favicon" />
+            <img src={brandConfig.faviconUrl} alt={`${brandConfig.name} favicon`} />
             <span style={{ color: '#ffffff', fontWeight: 800, letterSpacing: '1px' }}>
               ✦ {servicesData.length} AUTHENTIC VEDIC REMEDIAL DISCIPLINES
             </span>
@@ -192,7 +192,7 @@ export default function Services() {
             margin: '0 auto 30px',
             lineHeight: 1.7
           }}>
-            Every human struggle is rooted in planetary transits, unaligned chakras, karmic debts, or negative spiritual interference. <strong>Pandith Astrologer</strong> provides exact, fast-acting remedies tailored to your birth chart with proven results across Canada.
+            Every human struggle is rooted in planetary transits, unaligned chakras, karmic debts, or negative spiritual interference. <strong>{brandConfig.name}</strong> provides exact, fast-acting remedies tailored to your birth chart with proven results across Canada.
           </p>
 
           {/* Search Box */}
@@ -324,8 +324,8 @@ export default function Services() {
           {/* 40 Services Grid */}
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(330px, 1fr))',
-            gap: '30px'
+            gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 280px), 1fr))',
+            gap: 'clamp(18px, 3vw, 30px)'
           }}>
             {filteredServices.map(service => (
               <article 
@@ -360,7 +360,7 @@ export default function Services() {
                     }}
                     onError={(e) => {
                       e.target.onerror = null;
-                      e.target.src = "https://pandithgowtham.com/wp-content/uploads/2025/07/image-14-1.webp";
+                      e.target.src = "/images/assets/image-14-1.webp";
                     }}
                   />
 
@@ -462,6 +462,7 @@ export default function Services() {
                   {/* Actions Bar */}
                   <div style={{
                     display: 'flex',
+                    flexWrap: 'wrap',
                     alignItems: 'center',
                     justifyContent: 'space-between',
                     paddingTop: '15px',
@@ -554,7 +555,7 @@ export default function Services() {
         <div className="elementor-container">
           <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 45px' }}>
             <div className="img-heading-pill" style={{ marginBottom: '12px' }}>
-              <img src={brandConfig.faviconUrl} alt="pandith astrologer favicon" />
+              <img src={brandConfig.faviconUrl} alt={`${brandConfig.name} favicon`} />
               <span>✦ DISTANCE REMEDIAL PROCESS ✦</span>
             </div>
             <h2 style={{
@@ -582,7 +583,7 @@ export default function Services() {
               <div style={{ fontSize: '30px', marginBottom: '15px' }}>📞</div>
               <h3 style={{ fontSize: '19px', fontWeight: 800, color: 'var(--e-global-color-primary)', marginBottom: '10px' }}>Initial Confidential Call</h3>
               <p style={{ fontSize: '14.5px', color: '#666666', lineHeight: 1.6 }}>
-                Speak directly with Pandith Astrologer via phone or WhatsApp. Share your current distress, dates of birth, photos, and maternal names of the parties involved.
+                Speak directly with {brandConfig.name} via phone or WhatsApp. Share your current distress, dates of birth, photos, and maternal names of the parties involved.
               </p>
             </div>
 
@@ -591,7 +592,7 @@ export default function Services() {
               <div style={{ fontSize: '30px', marginBottom: '15px' }}>🪐</div>
               <h3 style={{ fontSize: '19px', fontWeight: 800, color: 'var(--e-global-color-primary)', marginBottom: '10px' }}>Root Cause Astral Reading</h3>
               <p style={{ fontSize: '14.5px', color: '#666666', lineHeight: 1.6 }}>
-                Pandith Astrologer performs a deep Kundli &amp; Prana energy diagnostic to uncover hidden blockages, negative outside spells, or malefic planetary transits.
+                {brandConfig.name} performs a deep Kundli &amp; Prana energy diagnostic to uncover hidden blockages, negative outside spells, or malefic planetary transits.
               </p>
             </div>
 
@@ -600,7 +601,7 @@ export default function Services() {
               <div style={{ fontSize: '30px', marginBottom: '15px' }}>🔥</div>
               <h3 style={{ fontSize: '19px', fontWeight: 800, color: 'var(--e-global-color-primary)', marginBottom: '10px' }}>Sacred Remedial Yajna</h3>
               <p style={{ fontSize: '14.5px', color: '#666666', lineHeight: 1.6 }}>
-                Consecrated mantras, Shukra Akarshan poojas, or Sudarshana Kavacham rituals are performed at Pandith Astrologer’s sacred altar on your behalf.
+                Consecrated mantras, Shukra Akarshan poojas, or Sudarshana Kavacham rituals are performed at {brandConfig.name}’s sacred altar on your behalf.
               </p>
             </div>
 
@@ -617,11 +618,11 @@ export default function Services() {
       </section>
 
       {/* 4. VERIFIED CLIENT TRANSFORMATIONS & TESTIMONIALS */}
-      <section style={{ padding: '65px 0', background: '#ffffff' }}>
+      <section style={{ padding: '65px 0', background: '#ffffff', overflow: 'hidden' }}>
         <div className="elementor-container">
           <div style={{ textAlign: 'center', maxWidth: '820px', margin: '0 auto 40px' }}>
             <div className="img-heading-pill" style={{ marginBottom: '12px' }}>
-              <img src={brandConfig.faviconUrl} alt="pandith astrologer favicon" />
+              <img src={brandConfig.faviconUrl} alt={`${brandConfig.name} favicon`} />
               <span>✦ VERIFIED SACRED TRANSFORMATIONS ✦</span>
             </div>
             <h2 style={{
@@ -635,57 +636,50 @@ export default function Services() {
               Real Miracles &amp; Client Breakthroughs
             </h2>
             <p style={{ fontSize: '16px', color: '#666666', lineHeight: 1.7 }}>
-              Documented cases of life transformations achieved through Pandith Astrologer's Vedic astrological solutions.
+              Documented cases of life transformations achieved through {brandConfig.name}'s Vedic astrological solutions.
             </p>
           </div>
+        </div>
 
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
-            gap: '25px'
-          }}>
-            {serviceTestimonials.map(t => (
+        {/* Single Line Moving Left to Right Marquee */}
+        <div className="transformations-slider-wrap">
+          <div className="transformations-track">
+            {[...serviceTestimonials, ...serviceTestimonials].map((t, index) => (
               <div
-                key={t.id}
-                style={{
-                  background: '#fdfbf7',
-                  borderRadius: '12px',
-                  padding: '25px',
-                  border: '1px solid rgba(240, 180, 21, 0.3)',
-                  boxShadow: '0 4px 15px rgba(0, 0, 0, 0.04)',
-                  display: 'flex',
-                  flexDirection: 'column'
-                }}
+                key={`${t.id}-${index}`}
+                className="transformation-card"
               >
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
-                  <span style={{ fontSize: '13px', fontWeight: 800, color: 'var(--e-global-color-primary)', display: 'flex', alignItems: 'center', gap: '5px' }}>
-                    <span>{t.icon}</span>
-                    <span>{t.serviceName}</span>
-                  </span>
-                  <span style={{ fontSize: '11.5px', background: '#ffeec2', color: '#875100', padding: '2px 8px', borderRadius: '10px', fontWeight: 800 }}>
-                    ⚡ {t.turnaround}
-                  </span>
+                <div>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+                    <span style={{ fontSize: '13px', fontWeight: 800, color: 'var(--e-global-color-primary)', display: 'flex', alignItems: 'center', gap: '5px' }}>
+                      <span>{t.icon}</span>
+                      <span>{t.serviceName}</span>
+                    </span>
+                    <span style={{ fontSize: '11.5px', background: '#ffeec2', color: '#875100', padding: '2px 8px', borderRadius: '10px', fontWeight: 800 }}>
+                      ⚡ {t.turnaround}
+                    </span>
+                  </div>
+
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
+                    <span style={{ color: '#F0B415', fontSize: '15px' }}>★★★★★</span>
+                    <span style={{ fontSize: '12px', background: '#ffffff', border: '1px solid #e0d0b0', padding: '2px 8px', borderRadius: '4px', fontWeight: 700, color: '#333333' }}>
+                      {t.metrics}
+                    </span>
+                  </div>
+
+                  <p style={{ fontSize: '14px', color: '#444444', lineHeight: 1.6, fontStyle: 'italic', marginBottom: '18px' }}>
+                    "{t.quote}"
+                  </p>
                 </div>
 
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
-                  <span style={{ color: '#F0B415', fontSize: '15px' }}>★★★★★</span>
-                  <span style={{ fontSize: '12px', background: '#ffffff', border: '1px solid #e0d0b0', padding: '2px 8px', borderRadius: '4px', fontWeight: 700, color: '#333333' }}>
-                    {t.metrics}
-                  </span>
-                </div>
-
-                <p style={{ fontSize: '14.5px', color: '#444444', lineHeight: 1.6, fontStyle: 'italic', marginBottom: '18px', flexGrow: 1 }}>
-                  "{t.quote}"
-                </p>
-
-                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', borderTop: '1px solid #e8dec8', paddingTop: '14px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', borderTop: '1px solid #e8dec8', paddingTop: '14px', marginTop: 'auto' }}>
                   <img
                     src={t.avatar}
                     alt={t.client}
                     style={{ width: '45px', height: '45px', borderRadius: '50%', objectFit: 'cover', border: '2px solid var(--e-global-color-secondary)' }}
                     onError={(e) => {
                       e.target.onerror = null;
-                      e.target.src = "https://pandithgowtham.com/wp-content/uploads/2025/07/image-14-1.webp";
+                      e.target.src = "/images/assets/image-14-1.webp";
                     }}
                   />
                   <div>
@@ -700,10 +694,10 @@ export default function Services() {
       </section>
 
       {/* 5. WHY CHOOSE US */}
-      <GowthamWhyChooseUs />
+      <WhyChooseUs />
 
       {/* 6. CONTACT FORM & FAQ */}
-      <GowthamContactFAQ />
+      <ContactFAQ />
 
       {/* 7. QUICK VIEW MODAL */}
       {activeModalService && (
@@ -771,7 +765,7 @@ export default function Services() {
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 onError={(e) => {
                   e.target.onerror = null;
-                  e.target.src = "https://pandithgowtham.com/wp-content/uploads/2025/07/image-14-1.webp";
+                  e.target.src = "/images/assets/image-14-1.webp";
                 }}
               />
               <div style={{
@@ -870,11 +864,11 @@ export default function Services() {
                   }}
                 >
                   <Phone size={18} />
-                  <span>Call {brandConfig.phone}</span>
+                  <span>Call {brandConfig.phoneDisplay}</span>
                 </a>
 
                 <a
-                  href={`https://wa.me/${brandConfig.phoneRaw.replace('+', '')}?text=${encodeURIComponent(`Hello Pandith Astrologer, I need confidential help with ${activeModalService.title}.`)}`}
+                  href={`https://wa.me/${brandConfig.phoneRaw.replace('+', '')}?text=${encodeURIComponent(`Hello ${brandConfig.name}, I need confidential help with ${activeModalService.title}.`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -893,7 +887,7 @@ export default function Services() {
                   }}
                 >
                   <MessageCircle size={18} />
-                  <span>WhatsApp Pandith</span>
+                  <span>WhatsApp {brandConfig.name}</span>
                 </a>
 
                 <Link

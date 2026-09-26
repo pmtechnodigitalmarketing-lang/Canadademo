@@ -1,10 +1,11 @@
 export const personalDetails = {
-  websiteName: "Pandith Astrologer",
-  pandithName: "Pandith",
-  email: "pandithastrologer@gmail.com",
-  contactNumber: "+1 403-431-5226",
+  websiteName: "Master Astrologer",
+  pandithName: "Master",
+  email: "demoexample@gmail.com",
+  contactNumber: "+123456789",
   address: "Calgary, Alberta, Canada",
-  whatsappNumber: "+14034315226"
+  whatsappNumber: "+123456789"
 };
 
 export default personalDetails;
+

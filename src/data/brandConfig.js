@@ -13,6 +13,7 @@ export const brandConfig = {
   phoneDisplay: personalDetails.contactNumber,
   email: personalDetails.email,
   address: personalDetails.address,
+  mainOffice: personalDetails.address,
   city: "Calgary",
   province: "Alberta",
   country: "Canada",
@@ -21,8 +22,8 @@ export const brandConfig = {
   experienceYears: "25+",
   counterYears: "30+",
   clientsSatisfied: "35k +",
-  logoUrl: "https://pandithgowtham.com/wp-content/uploads/2025/04/new-logo.webp",
-  faviconUrl: "https://pandithgowtham.com/wp-content/uploads/2025/07/favv.webp",
+  logoUrl: "/images/sacred-icon.svg",
+  faviconUrl: "/images/sacred-icon.svg",
   bannerBadge: `${personalDetails.pandithName} best services`,
   disclaimer: `Disclaimer :- The astrology consultation and services offered by ${personalDetails.pandithName} are solely based on his expertise in astrology and the specific circumstances of your situation. Results may vary from person to person.`
 };

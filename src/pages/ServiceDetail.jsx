@@ -1,322 +1,250 @@
 import React from 'react';
-import { useParams, Link, Navigate } from 'react-router-dom';
-import { Phone, MessageCircle, Calendar, Check, ArrowRight, ShieldCheck, Sparkles, HelpCircle, ChevronRight } from 'lucide-react';
-import servicesData from '../data/servicesData';
+import { useLocation, useParams, Link } from 'react-router-dom';
+import { Phone, MessageCircle, CheckCircle, ArrowRight, Sparkles, Clock, Compass } from 'lucide-react';
 import brandConfig from '../data/brandConfig';
+import allServices from '../data/servicesData';
+import ContactFAQ from '../components/ContactFAQ';
+import WhyChooseUs from '../components/WhyChooseUs';
 
-export default function ServiceDetail({ onOpenAppointment }) {
-  const { serviceSlug } = useParams();
-
-  const service = servicesData.find(s => s.slug === serviceSlug) || servicesData[0];
-
-  if (!service) {
-    return <Navigate to="/services" replace />;
+const legacyServicesData = {
+  "/relationship-problems": {
+    title: "Relationship Problems Solution",
+    subtitle: "Resolve Misunderstandings, Arguments & Rekindle Eternal Affection",
+    image: "/images/assets/qdlimvfjewyrob9b8rfg.webp",
+    description: `Are you and your partner constantly arguing over trivial matters? Has emotional distance grown between you? ${brandConfig.name} offers profound Vedic horoscope compatibility matching and planetary remedies to eliminate friction and restore true love.`
+  },
+  "/psychic-reading": {
+    title: "Psychic Reading in Canada",
+    subtitle: "Clairvoyant Foresight for Love, Destiny, Career & Finances",
+    image: "/images/assets/vpvftb7rgcxglzn2a0eg.webp",
+    description: `Receive deep clarity on your past, present, and future. ${brandConfig.name} utilizes inherited clairvoyant psychic perception, palmistry, and Vedic astrology charts to reveal hidden opportunities and protect you from upcoming hardships.`
+  },
+  "/spiritual-cleansing": {
+    title: "Spiritual Healing & Cleansing",
+    subtitle: "Restore Inner Harmony, Karmic Balance & Positive Vibrations",
+    image: "/images/assets/pqgtjgbbnggd7sja2xsq.webp",
+    description: `Clear emotional distress, chronic anxiety, and heavy psychic burdens with sacred Vedic mantras, chakra balancing, and ancestral spiritual healing performed by ${brandConfig.name}.`
+  },
+  "/vashikaran-specialist": {
+    title: "Vashikaran Specialist in Canada",
+    subtitle: "Positive Vedic Vashikaran Mantras to Attract Love & Harmony",
+    image: "/images/assets/image-14-1.webp",
+    description: "Influence circumstances and attract your beloved ethically using pure, satvik Vedic Vashikaran rituals passed down through generations of revered masters."
+  },
+  "/get-ex-love-back": {
+    title: "Get Ex Love Back Specialist",
+    subtitle: "Bring Back Your Ex Partner & Reignite True Passion Fast",
+    image: "/images/assets/qdlimvfjewyrob9b8rfg.webp",
+    description: `Experiencing heartbreak after a sudden separation or breakup? ${brandConfig.name} identifies planetary hindrances causing third-party interference and uses proven love spells and astrological remedies to bring your lover back.`
+  },
+  "/black-magic-removal": {
+    title: "Black Magic & Evil Spirit Removal",
+    subtitle: "Powerful Vedic Protection Against Dark Occult Energies & Hexes",
+    image: "/images/assets/hjaobubgx1dq3ngklzsc.webp",
+    description: `If you are suffering from unexplained health problems, business collapses, recurring nightmares, or domestic discord, you may be affected by black magic or evil spirits. ${brandConfig.name} provides guaranteed removal rituals and lifelong shields.`
+  },
+  "/negative-energy-removal": {
+    title: "Negative Energy Removal",
+    subtitle: "Purify Your Aura, Home & Business from Envious Vibrations",
+    image: "/images/assets/dnmorazmguyea2a6fwxo.webp",
+    description: `Banish lingering dark vibrations, depression, and bad luck. ${brandConfig.name}'s powerful yantras and havans cleanse your living space, inviting wealth, prosperity, and peace of mind.`
+  },
+  "/jealousy-and-curse-removal": {
+    title: "Jealousy & Curse Removal Specialist",
+    subtitle: "Neutralize Evil Eye (Buri Nazar), Family Curses & Rival Malice",
+    image: "/images/assets/lcvmdq6ytk4h3o4pijrf.webp",
+    description: `Protect your loved ones and your hard-earned achievements from destructive envy and ancestral curses. ${brandConfig.name}'s divine protective talismans repel all hostile energies permanently.`
   }
+};
 
-  const otherServices = servicesData.filter(s => s.id !== service.id).slice(0, 4);
+export default function ServiceDetail() {
+  const location = useLocation();
+  const { serviceSlug } = useParams();
+  const currentPath = location.pathname;
+
+  // 1. Try to find in all 40 services
+  const matchedService = allServices.find(s => 
+    s.id === serviceSlug || 
+    s.id === currentPath.replace('/services/', '').replace('/', '') ||
+    currentPath.includes(s.id)
+  );
+
+  // 2. Fallback to legacy dictionary or psychic reading default
+  const legacy = legacyServicesData[currentPath];
+
+  const title = matchedService ? matchedService.title : (legacy ? legacy.title : "Vedic Astrology Service");
+  const subtitle = matchedService ? matchedService.subtitle : (legacy ? legacy.subtitle : "Astrological Solutions Across Canada");
+  const image = matchedService ? matchedService.image : (legacy ? legacy.image : "/images/assets/vpvftb7rgcxglzn2a0eg.webp");
+  const description = matchedService ? (matchedService.fullDesc || matchedService.shortDesc) : (legacy ? legacy.description : `Contact ${brandConfig.name} for personal Vedic guidance.`);
+  const remedies = matchedService ? matchedService.remedies : ["Personal Horoscope Reading", "Vedic Dosha Pacification", "Protective Yantra", "Spiritual Counseling"];
+  const timing = matchedService ? matchedService.timing : "Immediate consultation available";
 
   return (
-    <div style={{ background: 'var(--bg-parchment)', paddingTop: '2rem', paddingBottom: '5rem' }}>
-      
-      {/* Breadcrumb Strip */}
-      <div className="container" style={{ marginBottom: '1.5rem' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-          <Link to="/" style={{ color: 'var(--crimson-800)' }}>Home</Link>
-          <ChevronRight size={14} />
-          <Link to="/services" style={{ color: 'var(--crimson-800)' }}>Services</Link>
-          <ChevronRight size={14} />
-          <span style={{ color: 'var(--crimson-950)', fontWeight: '600' }}>{service.shortTitle}</span>
+    <div>
+      {/* Hero Banner */}
+      <div style={{
+        background: 'linear-gradient(135deg, var(--e-global-color-primary) 0%, var(--e-global-color-darkred) 100%)',
+        color: '#ffffff',
+        padding: '50px 15px',
+        textAlign: 'center'
+      }}>
+        <div className="elementor-container">
+          <div className="img-heading-pill" style={{ background: 'rgba(255, 255, 255, 0.15)', boxShadow: 'none' }}>
+            <img src={brandConfig.faviconUrl} alt={`${brandConfig.name} favicon`} />
+            <span style={{ color: '#ffffff' }}>{brandConfig.name} Services</span>
+          </div>
+          <h1 style={{
+            fontFamily: 'var(--font-heading)',
+            fontSize: 'clamp(28px, 4vw, 42px)',
+            fontWeight: 800,
+            textTransform: 'uppercase',
+            color: 'var(--e-global-color-secondary)',
+            marginBottom: '10px'
+          }}>
+            {title}
+          </h1>
+          <p style={{ fontSize: '17px', color: 'rgba(255,255,255,0.9)', maxWidth: '750px', margin: '0 auto' }}>
+            {subtitle}
+          </p>
         </div>
       </div>
 
-      {/* Hero Banner for Service */}
-      <section style={{
-        background: 'linear-gradient(135deg, #2b060d 0%, #150205 100%)',
-        color: '#ffffff',
-        padding: '3.5rem 0',
-        borderBottom: '2px solid var(--gold-500)',
-        marginBottom: '3.5rem'
-      }}>
-        <div className="container">
-          <div style={{ maxWidth: '850px' }}>
-            <div className="section-badge" style={{ background: 'rgba(212, 175, 55, 0.15)', borderColor: 'var(--gold-400)', color: 'var(--gold-200)' }}>
-              <Sparkles size={14} style={{ color: 'var(--gold-400)' }} />
-              <span>{service.category} &bull; {service.badge}</span>
+      {/* Main Content Details */}
+      <section style={{ padding: '60px 0', background: '#ffffff' }}>
+        <div className="elementor-container">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: 'clamp(25px, 4vw, 50px)', alignItems: 'center' }}>
+            
+            {/* Image */}
+            <div>
+              <div style={{
+                borderRadius: '16px',
+                overflow: 'hidden',
+                boxShadow: '0 12px 30px rgba(0,0,0,0.12)',
+                background: '#2b0404',
+                maxHeight: '450px'
+              }}>
+                <img 
+                  src={image} 
+                  alt={title} 
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    maxHeight: '450px',
+                    objectFit: 'cover',
+                    display: 'block'
+                  }}
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = "/images/assets/image-14-1.webp";
+                  }}
+                />
+              </div>
             </div>
 
-            <h1 style={{
-              fontFamily: 'var(--font-serif-royal)',
-              fontSize: 'clamp(2rem, 4.2vw, 3.2rem)',
-              color: '#ffffff',
-              marginBottom: '1rem',
-              lineHeight: 1.2
-            }}>
-              {service.title}
-            </h1>
+            {/* Content & Remedies */}
+            <div>
+              <div className="img-heading-pill">
+                <img src={brandConfig.faviconUrl} alt={`${brandConfig.name} favicon`} />
+                <span>guaranteed solutions</span>
+              </div>
 
-            <p style={{
-              color: '#fed7aa',
-              fontSize: '1.15rem',
-              lineHeight: 1.6,
-              marginBottom: '1.75rem'
-            }}>
-              {service.tagline}
-            </p>
+              <h2 className="section-title" style={{ textAlign: 'left', marginBottom: '20px' }}>
+                Why Consult {brandConfig.name} for {title}?
+              </h2>
 
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
-              <a href={`tel:${brandConfig.phoneRaw}`} className="btn-primary">
-                <Phone size={16} />
-                <span>Call Guruji: {brandConfig.phone}</span>
-              </a>
+              <p style={{ fontSize: '16px', color: '#444444', lineHeight: 1.8, marginBottom: '25px' }}>
+                {description}
+              </p>
 
-              <button onClick={onOpenAppointment} className="btn-crimson">
-                <Calendar size={16} />
-                <span>Book Remedy Session</span>
-              </button>
+              {/* Remedies Box */}
+              {remedies && remedies.length > 0 && (
+                <div style={{
+                  background: '#fbf5e8',
+                  padding: '20px',
+                  borderRadius: '12px',
+                  marginBottom: '25px',
+                  borderLeft: '4px solid var(--e-global-color-secondary)'
+                }}>
+                  <h4 style={{ fontSize: '15px', fontWeight: 800, textTransform: 'uppercase', color: 'var(--e-global-color-darkred)', marginBottom: '10px' }}>
+                    Sacred Vedic Remedies Applied:
+                  </h4>
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '8px' }}>
+                    {remedies.map((rem, i) => (
+                      <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '14px', color: '#2b0404', fontWeight: 600 }}>
+                        <CheckCircle size={16} color="var(--e-global-color-primary)" />
+                        <span>{rem}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Timing */}
+              {timing && (
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '14.5px', color: 'var(--e-global-color-primary)', fontWeight: 700, marginBottom: '25px' }}>
+                  <Clock size={18} />
+                  <span>Expected Results: {timing}</span>
+                </div>
+              )}
+
+              {/* Call to action buttons */}
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '15px' }}>
+                <a href={`tel:${brandConfig.phoneRaw}`} className="header-phone-btn">
+                  <Phone size={18} />
+                  <span>Call Now: {brandConfig.phoneDisplay}</span>
+                </a>
+
+                <a 
+                  href={brandConfig.whatsappUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '8px',
+                    background: '#25D366',
+                    color: '#ffffff',
+                    padding: '10px 22px',
+                    borderRadius: '30px',
+                    fontWeight: 700,
+                    fontSize: '15px'
+                  }}
+                >
+                  <MessageCircle size={18} />
+                  <span>WhatsApp Chat</span>
+                </a>
+
+                <Link
+                  to="/services"
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '6px',
+                    border: '1.5px solid var(--e-global-color-primary)',
+                    color: 'var(--e-global-color-primary)',
+                    padding: '10px 20px',
+                    borderRadius: '30px',
+                    fontWeight: 700,
+                    fontSize: '14px'
+                  }}
+                >
+                  <span>View All 40+ Services</span>
+                  <ArrowRight size={15} />
+                </Link>
+              </div>
+
             </div>
+
           </div>
         </div>
       </section>
 
-      {/* Main Content & Sidebar Layout */}
-      <div className="container">
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-          gap: '3rem',
-          alignItems: 'flex-start'
-        }}>
-          
-          {/* Main Article Column (2/3 width on wide screens) */}
-          <div style={{ gridColumn: 'span 2' }}>
-            
-            {/* Service Featured Image */}
-            <div style={{
-              borderRadius: '12px',
-              overflow: 'hidden',
-              border: '2px solid rgba(212, 175, 55, 0.4)',
-              boxShadow: 'var(--shadow-md)',
-              marginBottom: '2.5rem',
-              maxHeight: '440px',
-              background: '#2b060d'
-            }}>
-              <img
-                src={service.image}
-                alt={service.alt}
-                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-              />
-            </div>
+      {/* Why Choose Us */}
+      <WhyChooseUs />
 
-            {/* Deep Description */}
-            <div style={{
-              background: '#ffffff',
-              border: '1px solid rgba(212, 175, 55, 0.3)',
-              borderRadius: '12px',
-              padding: '2.25rem',
-              boxShadow: 'var(--shadow-sm)',
-              marginBottom: '2.5rem'
-            }}>
-              <h2 style={{ fontSize: '1.8rem', color: 'var(--crimson-900)', marginBottom: '1.25rem' }}>
-                Astrological Overview &amp; <span className="gold-gradient">Remedial Methodology</span>
-              </h2>
-
-              <div style={{ fontSize: '1rem', lineHeight: 1.8, color: 'var(--text-secondary)' }}>
-                {service.fullContent.split('\n\n').map((para, idx) => (
-                  <p key={idx} style={{ marginBottom: '1.25rem' }}>
-                    {para.trim()}
-                  </p>
-                ))}
-              </div>
-            </div>
-
-            {/* Key Areas Covered */}
-            <div style={{
-              background: '#ffffff',
-              border: '1px solid rgba(212, 175, 55, 0.3)',
-              borderRadius: '12px',
-              padding: '2.25rem',
-              boxShadow: 'var(--shadow-sm)',
-              marginBottom: '2.5rem'
-            }}>
-              <h3 style={{ fontSize: '1.4rem', color: 'var(--crimson-900)', marginBottom: '1.25rem' }}>
-                What This Sacred Remedy Includes:
-              </h3>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1rem' }}>
-                {service.features.map((feat, idx) => (
-                  <div key={idx} style={{
-                    display: 'flex',
-                    alignItems: 'flex-start',
-                    gap: '0.65rem',
-                    background: 'var(--bg-parchment)',
-                    padding: '1rem',
-                    borderRadius: '8px',
-                    border: '1px solid rgba(109, 14, 32, 0.1)'
-                  }}>
-                    <Check size={18} style={{ color: 'var(--crimson-700)', flexShrink: 0, marginTop: '2px' }} />
-                    <span style={{ fontSize: '0.9rem', color: 'var(--crimson-950)', fontWeight: '600' }}>{feat}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Benefits & Guarantees */}
-            <div style={{
-              background: 'linear-gradient(145deg, #2b060d 0%, #170205 100%)',
-              color: '#ffffff',
-              border: '2px solid var(--gold-400)',
-              borderRadius: '12px',
-              padding: '2.25rem',
-              boxShadow: 'var(--shadow-crimson)',
-              marginBottom: '2.5rem'
-            }}>
-              <h3 style={{ fontSize: '1.4rem', color: 'var(--gold-300)', marginBottom: '1.25rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <ShieldCheck size={22} />
-                <span>Client Benefits &amp; Spiritual Protections</span>
-              </h3>
-              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
-                {service.benefits.map((ben, idx) => (
-                  <li key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', fontSize: '0.95rem', color: '#fed7aa' }}>
-                    <Sparkles size={16} style={{ color: 'var(--gold-400)', flexShrink: 0, marginTop: '4px' }} />
-                    <span>{ben}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Service FAQs */}
-            {service.faqs && (
-              <div style={{
-                background: '#ffffff',
-                border: '1px solid rgba(212, 175, 55, 0.3)',
-                borderRadius: '12px',
-                padding: '2.25rem',
-                boxShadow: 'var(--shadow-sm)'
-              }}>
-                <h3 style={{ fontSize: '1.4rem', color: 'var(--crimson-900)', marginBottom: '1.25rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <HelpCircle size={20} style={{ color: 'var(--crimson-700)' }} />
-                  <span>Frequently Asked About {service.shortTitle}</span>
-                </h3>
-                {service.faqs.map((f, i) => (
-                  <div key={i} style={{ marginBottom: '1.25rem', paddingBottom: '1.25rem', borderBottom: i < service.faqs.length - 1 ? '1px solid rgba(212, 175, 55, 0.2)' : 'none' }}>
-                    <h4 style={{ fontSize: '1rem', color: 'var(--crimson-900)', marginBottom: '0.4rem' }}>{f.q}</h4>
-                    <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>{f.a}</p>
-                  </div>
-                ))}
-              </div>
-            )}
-
-          </div>
-
-          {/* Sidebar Column (1/3 width) */}
-          <div>
-            
-            {/* Quick Consultation Booking Card */}
-            <div style={{
-              background: '#ffffff',
-              border: '2px solid var(--gold-500)',
-              borderRadius: '12px',
-              padding: '1.85rem',
-              boxShadow: 'var(--shadow-md)',
-              marginBottom: '2rem',
-              position: 'sticky',
-              top: '100px'
-            }}>
-              <div style={{ textAlign: 'center', marginBottom: '1.25rem' }}>
-                <span style={{ fontSize: '1.5rem', color: 'var(--crimson-800)', fontFamily: 'var(--font-serif-royal)' }}>ॐ</span>
-                <h3 style={{ fontSize: '1.25rem', color: 'var(--crimson-900)', marginBottom: '0.35rem' }}>
-                  Immediate Consultation
-                </h3>
-                <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>
-                  Speak directly with Pandith Raghav Guruji
-                </p>
-              </div>
-
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
-                <a
-                  href={`tel:${brandConfig.phoneRaw}`}
-                  className="btn-primary"
-                  style={{ width: '100%', fontSize: '0.9rem' }}
-                >
-                  <Phone size={16} />
-                  <span>Call: {brandConfig.phone}</span>
-                </a>
-
-                <a
-                  href={`https://wa.me/${brandConfig.whatsapp}?text=Hello%20Pandith%20Raghav%20Guruji%2C%20I%20would%20like%20to%20consult%20you%20regarding%20${encodeURIComponent(service.title)}.`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-crimson"
-                  style={{ width: '100%', fontSize: '0.9rem' }}
-                >
-                  <MessageCircle size={16} />
-                  <span>WhatsApp Message</span>
-                </a>
-
-                <button
-                  onClick={onOpenAppointment}
-                  className="btn-outline-gold"
-                  style={{ width: '100%', fontSize: '0.9rem', color: 'var(--crimson-900)' }}
-                >
-                  <Calendar size={16} />
-                  <span>Book Appointment</span>
-                </button>
-              </div>
-
-              <div style={{ marginTop: '1.5rem', paddingTop: '1.25rem', borderTop: '1px solid rgba(212, 175, 55, 0.2)', fontSize: '0.78rem', color: 'var(--text-muted)', textAlign: 'center' }}>
-                🔒 100% Confidential &bull; Private 1-on-1 Guidance
-              </div>
-            </div>
-
-            {/* Related Services */}
-            <div style={{
-              background: '#ffffff',
-              border: '1px solid rgba(212, 175, 55, 0.3)',
-              borderRadius: '12px',
-              padding: '1.5rem',
-              boxShadow: 'var(--shadow-sm)'
-            }}>
-              <h4 style={{ fontSize: '1.1rem', color: 'var(--crimson-900)', marginBottom: '1rem', borderBottom: '2px solid rgba(212, 175, 55, 0.3)', paddingBottom: '0.4rem' }}>
-                Other Sacred Services
-              </h4>
-              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
-                {otherServices.map((other) => (
-                  <li key={other.id}>
-                    <Link
-                      to={`/services/${other.slug}`}
-                      style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'space-between',
-                        padding: '0.55rem',
-                        borderRadius: '6px',
-                        color: 'var(--crimson-950)',
-                        fontSize: '0.85rem',
-                        fontWeight: '600',
-                        background: 'var(--bg-parchment)',
-                        transition: 'var(--transition)'
-                      }}
-                      onMouseEnter={(e) => {
-                        e.currentTarget.style.background = 'var(--crimson-700)';
-                        e.currentTarget.style.color = '#ffffff';
-                      }}
-                      onMouseLeave={(e) => {
-                        e.currentTarget.style.background = 'var(--bg-parchment)';
-                        e.currentTarget.style.color = 'var(--crimson-950)';
-                      }}
-                    >
-                      <span>{other.shortTitle}</span>
-                      <ArrowRight size={13} />
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-
+      {/* Contact & FAQ */}
+      <ContactFAQ />
     </div>
   );
 }
+

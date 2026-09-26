@@ -1,43 +1,43 @@
 import React from 'react';
-import GowthamHeroSlider from '../components/GowthamHeroSlider';
-import GowthamServicesStrip from '../components/GowthamServicesStrip';
-import GowthamAboutSection from '../components/GowthamAboutSection';
-import GowthamServeSection from '../components/GowthamServeSection';
-import GowthamCTABanner from '../components/GowthamCTABanner';
-import GowthamLocationsSection from '../components/GowthamLocationsSection';
-import GowthamWhyChooseUs from '../components/GowthamWhyChooseUs';
-import GowthamTestimonials from '../components/GowthamTestimonials';
-import GowthamContactFAQ from '../components/GowthamContactFAQ';
+import HeroSlider from '../components/HeroSlider';
+import ServicesStrip from '../components/ServicesStrip';
+import AboutSection from '../components/AboutSection';
+import ServeSection from '../components/ServeSection';
+import CTABanner from '../components/CTABanner';
+import LocationsSection from '../components/LocationsSection';
+import WhyChooseUs from '../components/WhyChooseUs';
+import Testimonials from '../components/Testimonials';
+import ContactFAQ from '../components/ContactFAQ';
 
 export default function Home() {
   return (
     <>
       {/* 1. Hero Banner Slider */}
-      <GowthamHeroSlider />
+      <HeroSlider />
 
       {/* 2. Top Services Strip (6 rounded corner items) */}
-      <GowthamServicesStrip />
+      <ServicesStrip />
 
-      {/* 3. About Pandith Astrologer */}
-      <GowthamAboutSection />
+      {/* 3. About Section */}
+      <AboutSection />
 
-      {/* 4. What We Serve (Gold background with 6 Crimson Cards) */}
-      <GowthamServeSection />
+      {/* 4. What We Serve Section */}
+      <ServeSection />
 
       {/* 5. Overlapping CTA Banner */}
-      <GowthamCTABanner />
+      <CTABanner />
 
-      {/* 6. Where We Are Serving in Canada (Highlighted locations with actual place images) */}
-      <GowthamLocationsSection />
+      {/* 6. Where We Are Serving in Canada */}
+      <LocationsSection />
 
       {/* 7. Why Should You Choose Us (01 to 05 Gradient Numbers) */}
-      <GowthamWhyChooseUs />
+      <WhyChooseUs />
 
       {/* 8. What Our Client Say's (Testimonials) */}
-      <GowthamTestimonials />
+      <Testimonials />
 
       {/* 9. Share Your Problems Form & FAQ Accordion */}
-      <GowthamContactFAQ />
+      <ContactFAQ />
     </>
   );
 }

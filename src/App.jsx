@@ -1,18 +1,18 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import GowthamNavbar from './components/GowthamNavbar';
-import GowthamFooter from './components/GowthamFooter';
-import GowthamFloatingButtons from './components/GowthamFloatingButtons';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import FloatingButtons from './components/FloatingButtons';
 import ScrollToTop from './components/ScrollToTop';
 
 // Pages
 import Home from './pages/Home';
-import GowthamAboutPage from './pages/GowthamAboutPage';
+import About from './pages/About';
 import Services from './pages/Services';
-import GowthamServiceDetailPage from './pages/GowthamServiceDetailPage';
-import GowthamContactPage from './pages/GowthamContactPage';
-
-import GowthamLocationDetailPage from './pages/GowthamLocationDetailPage';
+import ServiceDetail from './pages/ServiceDetail';
+import Contact from './pages/Contact';
+import Locations from './pages/Locations';
+import LocationDetail from './pages/LocationDetail';
 
 function App() {
   return (
@@ -20,8 +20,8 @@ function App() {
       <ScrollToTop />
       <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         
-        {/* Exact Pandith Astrologer Topbar & Sticky Header */}
-        <GowthamNavbar />
+        {/* Topbar & Sticky Header */}
+        <Navbar />
 
         {/* Dynamic Route Content */}
         <main style={{ flexGrow: 1 }}>
@@ -29,42 +29,42 @@ function App() {
             <Route path="/" element={<Home />} />
             
             {/* About Us */}
-            <Route path="/about-us" element={<GowthamAboutPage />} />
+            <Route path="/about-us" element={<About />} />
             <Route path="/about" element={<Navigate to="/about-us" replace />} />
 
-            {/* Individual Exact Services from pandithgowtham.com */}
-            <Route path="/relationship-problems" element={<GowthamServiceDetailPage />} />
-            <Route path="/psychic-reading" element={<GowthamServiceDetailPage />} />
-            <Route path="/spiritual-cleansing" element={<GowthamServiceDetailPage />} />
-            <Route path="/vashikaran-specialist" element={<GowthamServiceDetailPage />} />
-            <Route path="/get-ex-love-back" element={<GowthamServiceDetailPage />} />
-            <Route path="/black-magic-removal" element={<GowthamServiceDetailPage />} />
-            <Route path="/negative-energy-removal" element={<GowthamServiceDetailPage />} />
-            <Route path="/jealousy-and-curse-removal" element={<GowthamServiceDetailPage />} />
+            {/* Individual Exact Services */}
+            <Route path="/relationship-problems" element={<ServiceDetail />} />
+            <Route path="/psychic-reading" element={<ServiceDetail />} />
+            <Route path="/spiritual-cleansing" element={<ServiceDetail />} />
+            <Route path="/vashikaran-specialist" element={<ServiceDetail />} />
+            <Route path="/get-ex-love-back" element={<ServiceDetail />} />
+            <Route path="/black-magic-removal" element={<ServiceDetail />} />
+            <Route path="/negative-energy-removal" element={<ServiceDetail />} />
+            <Route path="/jealousy-and-curse-removal" element={<ServiceDetail />} />
 
             {/* Services dedicated page & individual details */}
             <Route path="/services" element={<Services />} />
-            <Route path="/services/:serviceSlug" element={<GowthamServiceDetailPage />} />
+            <Route path="/services/:serviceSlug" element={<ServiceDetail />} />
 
-            {/* Locations (Edmonton & Calgary sub-routes) */}
-            <Route path="/locations/:slug" element={<GowthamLocationDetailPage />} />
-            <Route path="/locations" element={<GowthamLocationDetailPage />} />
+            {/* Locations Directory & Individual Cities */}
+            <Route path="/locations" element={<Locations />} />
+            <Route path="/location" element={<Navigate to="/locations" replace />} />
+            <Route path="/locations/:slug" element={<LocationDetail />} />
 
             {/* Contact & Appointment */}
-            <Route path="/contact-us" element={<GowthamContactPage />} />
+            <Route path="/contact-us" element={<Contact />} />
             <Route path="/contact" element={<Navigate to="/contact-us" replace />} />
-
 
             {/* Wildcard redirect */}
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
 
-        {/* Exact Pandith Astrologer Footer */}
-        <GowthamFooter />
+        {/* Premium Footer */}
+        <Footer />
 
         {/* Floating Call, WhatsApp & Scroll-to-Top Triggers */}
-        <GowthamFloatingButtons />
+        <FloatingButtons />
 
       </div>
     </BrowserRouter>
