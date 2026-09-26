@@ -21,8 +21,35 @@ export default function GowthamFooter() {
           
           {/* Column 1: Brand / Description */}
           <div className="footer-col brand-col">
-            <Link to="/" className="footer-brand-logo">
-              <img src={brandConfig.logoUrl} alt={brandConfig.brandName} style={{ maxHeight: '75px', width: 'auto', marginBottom: '15px' }} />
+            <Link to="/" className="footer-brand-logo" style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', marginBottom: '15px', textDecoration: 'none' }}>
+              <div style={{
+                width: '48px',
+                height: '48px',
+                borderRadius: '50%',
+                background: 'radial-gradient(circle, #881329 0%, #2b060d 100%)',
+                border: '2px solid var(--e-global-color-secondary)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: 'var(--e-global-color-secondary)',
+                fontFamily: 'var(--font-heading)',
+                fontSize: '1.4rem',
+                fontWeight: '900',
+                flexShrink: 0
+              }}>
+                ॐ
+              </div>
+              <div>
+                <div style={{
+                  fontFamily: 'var(--font-heading)',
+                  fontSize: '1.25rem',
+                  fontWeight: '800',
+                  color: '#ffffff',
+                  letterSpacing: '0.04em'
+                }}>
+                  {brandConfig.name.split(' ')[0]} <span style={{ color: 'var(--e-global-color-secondary)' }}>{brandConfig.name.split(' ').slice(1).join(' ')}</span>
+                </div>
+              </div>
             </Link>
             <p className="footer-brand-desc">
               {brandConfig.name} is a renowned astrologer and psychic reader based in {brandConfig.country}, carrying forward his family’s legacy of astrological wisdom, offering precise future predictions and spiritual healing to bring positivity and balance into your life.
@@ -65,10 +92,6 @@ export default function GowthamFooter() {
               <MapPin size={18} className="footer-icon" />
               <span>{brandConfig.address}</span>
             </div>
-            
-            <Link to="/book-an-appointment" className="footer-cta-btn">
-              Book an Appointment
-            </Link>
           </div>
 
         </div>
