@@ -363,63 +363,6 @@ export default function Services() {
                       e.target.src = "/images/assets/image-14-1.webp";
                     }}
                   />
-
-                  {/* Top Category Badge */}
-                  <div style={{
-                    position: 'absolute',
-                    top: '12px',
-                    left: '12px',
-                    background: 'var(--e-global-color-primary)',
-                    color: '#ffffff',
-                    padding: '4px 12px',
-                    borderRadius: '20px',
-                    fontSize: '12px',
-                    fontWeight: 700,
-                    textTransform: 'uppercase',
-                    boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '5px'
-                  }}>
-                    <span>{service.icon}</span>
-                    <span>{service.category.replace('-', ' ')}</span>
-                  </div>
-
-                  {/* Expected Timing Chip */}
-                  {service.timing && (
-                    <div style={{
-                      position: 'absolute',
-                      bottom: '12px',
-                      left: '12px',
-                      background: 'rgba(0, 0, 0, 0.8)',
-                      color: 'var(--e-global-color-secondary)',
-                      padding: '3px 10px',
-                      borderRadius: '12px',
-                      fontSize: '12px',
-                      fontWeight: 700,
-                      backdropFilter: 'blur(4px)'
-                    }}>
-                      ⚡ {service.timing}
-                    </div>
-                  )}
-
-                  {/* Zodiac / Chakra Tag */}
-                  {service.chakraZodiac && (
-                    <div style={{
-                      position: 'absolute',
-                      bottom: '12px',
-                      right: '12px',
-                      background: 'rgba(0, 0, 0, 0.8)',
-                      color: '#ffffff',
-                      padding: '3px 10px',
-                      borderRadius: '12px',
-                      fontSize: '12px',
-                      fontWeight: 700,
-                      backdropFilter: 'blur(4px)'
-                    }}>
-                      {service.chakraZodiac}
-                    </div>
-                  )}
                 </div>
 
                 {/* Card Content */}
@@ -768,39 +711,6 @@ export default function Services() {
                   e.target.src = "/images/assets/image-14-1.webp";
                 }}
               />
-              <div style={{
-                position: 'absolute',
-                bottom: '15px',
-                left: '20px',
-                right: '20px',
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'flex-end'
-              }}>
-                <span style={{
-                  background: 'var(--e-global-color-primary)',
-                  color: '#ffffff',
-                  padding: '4px 12px',
-                  borderRadius: '14px',
-                  fontSize: '12px',
-                  fontWeight: 800,
-                  textTransform: 'uppercase'
-                }}>
-                  {activeModalService.icon} {activeModalService.category}
-                </span>
-                {activeModalService.timing && (
-                  <span style={{
-                    background: 'rgba(0,0,0,0.85)',
-                    color: 'var(--e-global-color-secondary)',
-                    padding: '4px 12px',
-                    borderRadius: '14px',
-                    fontSize: '12px',
-                    fontWeight: 800
-                  }}>
-                    ⚡ {activeModalService.timing}
-                  </span>
-                )}
-              </div>
             </div>
 
             {/* Modal Content */}
