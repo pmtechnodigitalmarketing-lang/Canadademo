@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Phone, ChevronDown, Menu, X } from 'lucide-react';
+import { Phone, ChevronDown, Menu, X, Calendar } from 'lucide-react';
 import brandConfig from '../data/brandConfig';
 
 const canadaRegions = [
@@ -65,12 +65,45 @@ export default function GowthamNavbar() {
         <div className="header-inner">
           
           {/* Logo */}
-          <Link to="/" onClick={closeMenu} className="gowtham-logo">
-            <img 
-              src={brandConfig.logoUrl} 
-              alt="Pandith Astrologer" 
-              loading="eager"
-            />
+          <Link to="/" onClick={closeMenu} className="gowtham-logo" style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', textDecoration: 'none' }}>
+            <div style={{
+              width: '52px',
+              height: '52px',
+              borderRadius: '50%',
+              background: 'radial-gradient(circle, var(--e-global-color-primary) 0%, #2b060d 100%)',
+              border: '2px solid var(--e-global-color-secondary)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              boxShadow: '0 0 15px rgba(212, 175, 55, 0.4)',
+              flexShrink: 0
+            }}>
+              <span style={{ fontFamily: 'var(--font-heading)', color: 'var(--e-global-color-secondary)', fontSize: '1.4rem', fontWeight: '900' }}>
+                ॐ
+              </span>
+            </div>
+            <div>
+              <div style={{
+                fontFamily: 'var(--font-heading)',
+                fontSize: 'clamp(1.15rem, 2vw, 1.45rem)',
+                fontWeight: '800',
+                color: '#000000',
+                letterSpacing: '0.04em',
+                lineHeight: 1.15
+              }}>
+                {brandConfig.name.split(' ')[0]} <span style={{ color: 'var(--e-global-color-primary)' }}>{brandConfig.name.split(' ').slice(1).join(' ')}</span>
+              </div>
+              <div style={{
+                fontSize: '0.72rem',
+                color: 'var(--e-global-color-text)',
+                letterSpacing: '0.12em',
+                textTransform: 'uppercase',
+                marginTop: '0.15rem',
+                fontWeight: 600
+              }}>
+                Canadian Astrologer
+              </div>
+            </div>
           </Link>
 
           {/* Desktop Nav */}
@@ -184,12 +217,6 @@ export default function GowthamNavbar() {
                   Contact us
                 </Link>
               </li>
-
-              <li>
-                <Link to="/book-an-appointment" className={location.pathname === '/book-an-appointment' ? 'active' : ''}>
-                  Book an Appointment
-                </Link>
-              </li>
             </ul>
           </nav>
 
@@ -197,8 +224,13 @@ export default function GowthamNavbar() {
           <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
             <a href={`tel:${brandConfig.phoneRaw}`} className="header-phone-btn">
               <Phone size={16} />
-              <span>{brandConfig.phone}</span>
+              <span>Call Now</span>
             </a>
+            
+            <Link to="/contact-us" className="header-appointment-btn" style={{ textDecoration: 'none' }}>
+              <Calendar size={16} />
+              <span>Book Appointment</span>
+            </Link>
 
             {/* Mobile Hamburger */}
             <button
@@ -228,13 +260,16 @@ export default function GowthamNavbar() {
               <li><Link to="/services" onClick={closeMenu} style={{ fontWeight: '700', color: '#1a1a1a', fontSize: '17px' }}>Services</Link></li>
               <li><a href="#locations" onClick={closeMenu} style={{ fontWeight: '700', color: '#1a1a1a', fontSize: '17px' }}>Locations</a></li>
               <li><Link to="/contact-us" onClick={closeMenu} style={{ fontWeight: '700', color: '#1a1a1a', fontSize: '17px' }}>Contact us</Link></li>
-              <li><Link to="/book-an-appointment" onClick={closeMenu} style={{ fontWeight: '700', color: '#1a1a1a', fontSize: '17px' }}>Book an Appointment</Link></li>
             </ul>
-            <div style={{ marginTop: '20px' }}>
+            <div style={{ marginTop: '20px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
               <a href={`tel:${brandConfig.phoneRaw}`} className="header-phone-btn" style={{ width: '100%', justifyContent: 'center' }}>
                 <Phone size={16} />
-                <span>Call Now: {brandConfig.phone}</span>
+                <span>Call Now</span>
               </a>
+              <Link to="/contact-us" className="header-appointment-btn" style={{ width: '100%', justifyContent: 'center', textDecoration: 'none' }} onClick={closeMenu}>
+                <Calendar size={16} />
+                <span>Book Appointment</span>
+              </Link>
             </div>
           </div>
         )}

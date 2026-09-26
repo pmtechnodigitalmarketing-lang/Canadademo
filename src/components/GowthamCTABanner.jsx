@@ -11,7 +11,7 @@ export default function GowthamCTABanner() {
         >
           <img 
             src="https://pandithgowtham.com/wp-content/uploads/2025/05/Gowtham-cta.webp" 
-            alt="pandith Gowtham CTA" 
+            alt="Pandith CTA" 
             loading="lazy"
             style={{ width: '100%', height: 'auto', display: 'block' }}
           />
@@ -20,3 +20,4 @@ export default function GowthamCTABanner() {
     </div>
   );
 }
+
