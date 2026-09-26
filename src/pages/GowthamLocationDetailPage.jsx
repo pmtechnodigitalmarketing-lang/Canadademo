@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Phone, MessageCircle, MapPin, CheckCircle } from 'lucide-react';
 import brandConfig from '../data/brandConfig';
+import { servicesData } from '../data/servicesData';
 import GowthamContactFAQ from '../components/GowthamContactFAQ';
 import GowthamWhyChooseUs from '../components/GowthamWhyChooseUs';
 
@@ -16,8 +17,33 @@ export default function GowthamLocationDetailPage() {
       .join(' ');
   };
 
+  const extractRegion = (s) => {
+    if (!s) return "Canada";
+    const parts = s.split('-in-');
+    if (parts.length > 1) {
+      return parts[1]
+        .split('-')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+    }
+    return "Canada";
+  };
+
+  const extractService = (s) => {
+    if (!s) return null;
+    const parts = s.split('-in-');
+    if (parts.length > 0) {
+      return servicesData.find(service => service.id === parts[0]);
+    }
+    return null;
+  };
+
   const title = formatTitle(slug);
-  const city = slug && slug.includes('edmonton') ? 'Edmonton, Alberta' : 'Calgary, Alberta';
+  const city = extractRegion(slug);
+  const serviceDetail = extractService(slug);
+
+  const serviceImage = serviceDetail?.image || "https://pandithgowtham.com/wp-content/uploads/2026/02/t6rah7e0ejw55tclactr.webp";
+  const serviceDesc = serviceDetail?.fullDesc || serviceDetail?.shortDesc || `Residents of ${city} have relied on Pandith Astrologer for over 25+ years to find definitive answers and fast solutions to emotional heartbreak, black magic effects, marriage turmoil, financial stagnation, and dark energy blockages.`;
 
   return (
     <div>
@@ -56,12 +82,14 @@ export default function GowthamLocationDetailPage() {
             
             <div>
               <img 
-                src="https://pandithgowtham.com/wp-content/uploads/2026/02/t6rah7e0ejw55tclactr.webp" 
+                src={serviceImage} 
                 alt={title}
                 style={{
                   width: '100%',
                   borderRadius: '110px 0 0 0',
-                  boxShadow: '0 10px 30px rgba(0,0,0,0.1)'
+                  boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
+                  objectFit: 'cover',
+                  maxHeight: '500px'
                 }}
               />
             </div>
@@ -73,11 +101,11 @@ export default function GowthamLocationDetailPage() {
               </div>
 
               <h2 className="gowtham-section-title" style={{ textAlign: 'left', marginBottom: '20px' }}>
-                Expert Astrological Guidance for {title}
+                {serviceDetail?.title ? `${serviceDetail.title} in ${city}` : `Expert Astrological Guidance for ${title}`}
               </h2>
 
               <p style={{ fontSize: '16px', color: '#444444', lineHeight: 1.8, marginBottom: '20px' }}>
-                Residents of {city} have relied on Pandith Astrologer for over 25+ years to find definitive answers and fast solutions to emotional heartbreak, black magic effects, marriage turmoil, financial stagnation, and dark energy blockages.
+                {serviceDesc}
               </p>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginBottom: '30px' }}>
