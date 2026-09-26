@@ -1,7 +1,10 @@
 import React from 'react';
 import brandConfig from '../data/brandConfig';
 
-export default function GowthamAboutSection() {
+export default function GowthamAboutSection({ 
+  imageSrc = "/images/about-astro.webp", 
+  imageAlt = "about astro" 
+}) {
   return (
     <section className="about-section" id="about">
       <div className="elementor-container">
@@ -10,8 +13,8 @@ export default function GowthamAboutSection() {
           {/* Left Arch Image */}
           <div className="about-left-image">
             <img 
-              src="/images/about-astro.webp" 
-              alt="about astro" 
+              src={imageSrc} 
+              alt={imageAlt} 
               loading="lazy"
               style={{ width: '100%', height: 'auto', borderRadius: '20px', display: 'block' }}
             />

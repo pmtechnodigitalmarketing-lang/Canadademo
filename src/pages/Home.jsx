@@ -4,6 +4,7 @@ import GowthamServicesStrip from '../components/GowthamServicesStrip';
 import GowthamAboutSection from '../components/GowthamAboutSection';
 import GowthamServeSection from '../components/GowthamServeSection';
 import GowthamCTABanner from '../components/GowthamCTABanner';
+import GowthamLocationsSection from '../components/GowthamLocationsSection';
 import GowthamWhyChooseUs from '../components/GowthamWhyChooseUs';
 import GowthamTestimonials from '../components/GowthamTestimonials';
 import GowthamContactFAQ from '../components/GowthamContactFAQ';
@@ -26,7 +27,10 @@ export default function Home() {
       {/* 5. Overlapping CTA Banner */}
       <GowthamCTABanner />
 
-      {/* 6. Why Should You Choose Us (01 to 05 Gradient Numbers) */}
+      {/* 6. Where We Are Serving in Canada (Highlighted locations with actual place images) */}
+      <GowthamLocationsSection />
+
+      {/* 7. Why Should You Choose Us (01 to 05 Gradient Numbers) */}
       <GowthamWhyChooseUs />
 
       {/* 8. What Our Client Say's (Testimonials) */}

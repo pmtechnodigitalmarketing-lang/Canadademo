@@ -34,7 +34,10 @@ export default function GowthamAboutPage() {
       </div>
 
       {/* Main About Section */}
-      <GowthamAboutSection />
+      <GowthamAboutSection 
+        imageSrc="/images/Shiv%20Shambho.jpg" 
+        imageAlt={`About ${brandConfig.name}`} 
+      />
 
       {/* Why Choose Us */}
       <GowthamWhyChooseUs />

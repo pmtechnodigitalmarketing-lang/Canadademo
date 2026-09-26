@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { Phone, MessageCircle, MapPin, CheckCircle } from 'lucide-react';
 import brandConfig from '../data/brandConfig';
 import { servicesData } from '../data/servicesData';
+import locationsData from '../data/locationsData';
 import GowthamContactFAQ from '../components/GowthamContactFAQ';
 import GowthamWhyChooseUs from '../components/GowthamWhyChooseUs';
 
@@ -38,12 +39,18 @@ export default function GowthamLocationDetailPage() {
     return null;
   };
 
-  const title = formatTitle(slug);
-  const city = extractRegion(slug);
+  const matchedLocation = locationsData.find(
+    l => l.slug.toLowerCase() === (slug || '').toLowerCase() || l.id.toLowerCase() === (slug || '').toLowerCase()
+  );
+
+  const city = matchedLocation ? matchedLocation.city : extractRegion(slug);
+  const title = matchedLocation 
+    ? `Astrologer in ${matchedLocation.city}` 
+    : formatTitle(slug);
   const serviceDetail = extractService(slug);
 
-  const serviceImage = serviceDetail?.image || "https://pandithgowtham.com/wp-content/uploads/2026/02/t6rah7e0ejw55tclactr.webp";
-  const serviceDesc = serviceDetail?.fullDesc || serviceDetail?.shortDesc || `Residents of ${city} have relied on Pandith Astrologer for over 25+ years to find definitive answers and fast solutions to emotional heartbreak, black magic effects, marriage turmoil, financial stagnation, and dark energy blockages.`;
+  const serviceImage = matchedLocation?.image || serviceDetail?.image || "https://pandithgowtham.com/wp-content/uploads/2026/02/t6rah7e0ejw55tclactr.webp";
+  const serviceDesc = matchedLocation?.description || serviceDetail?.fullDesc || serviceDetail?.shortDesc || `Residents of ${city} have relied on ${brandConfig.name} for over 25+ years to find definitive answers and fast solutions to emotional heartbreak, black magic effects, marriage turmoil, financial stagnation, and dark energy blockages.`;
 
   return (
     <div>
