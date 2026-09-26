@@ -17,7 +17,7 @@ export default function Home() {
       {/* 2. Top Services Strip (6 rounded corner items) */}
       <GowthamServicesStrip />
 
-      {/* 3. About Pandith Gowtham */}
+      {/* 3. About Pandith Astrologer */}
       <GowthamAboutSection />
 
       {/* 4. What We Serve (Gold background with 6 Crimson Cards) */}

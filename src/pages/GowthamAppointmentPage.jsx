@@ -19,7 +19,7 @@ export default function GowthamAppointmentPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setBooked(true);
-    const msg = `*Appointment Request for Pandith Gowtham*%0A%0A*Name:* ${formData.name}%0A*Phone:* ${formData.phone}%0A*Type:* ${formData.consultationType}%0A*Preferred Date:* ${formData.preferredDate}%0A*DOB:* ${formData.dob || 'N/A'}%0A*Problem:* ${formData.notes || 'General Reading'}`;
+    const msg = `*Appointment Request for Pandith Astrologer*%0A%0A*Name:* ${formData.name}%0A*Phone:* ${formData.phone}%0A*Type:* ${formData.consultationType}%0A*Preferred Date:* ${formData.preferredDate}%0A*DOB:* ${formData.dob || 'N/A'}%0A*Problem:* ${formData.notes || 'General Reading'}`;
     setTimeout(() => {
       window.open(`https://api.whatsapp.com/send?phone=${brandConfig.whatsapp}&text=${msg}`, '_blank');
     }, 1000);
@@ -36,7 +36,7 @@ export default function GowthamAppointmentPage() {
       }}>
         <div className="elementor-container">
           <div className="img-heading-pill" style={{ background: 'rgba(255, 255, 255, 0.15)', boxShadow: 'none' }}>
-            <img src={brandConfig.faviconUrl} alt="Pandith Gowtham" />
+            <img src={brandConfig.faviconUrl} alt="Pandith Astrologer" />
             <span style={{ color: '#ffffff' }}>Private &amp; Confidential Consultation</span>
           </div>
           <h1 style={{
@@ -50,7 +50,7 @@ export default function GowthamAppointmentPage() {
             Book An Appointment
           </h1>
           <p style={{ fontSize: '17px', color: 'rgba(255,255,255,0.9)' }}>
-            Meet with Pandith Gowtham in Calgary or schedule a phone/WhatsApp reading.
+            Meet with Pandith Astrologer in Calgary or schedule a phone/WhatsApp reading.
           </p>
         </div>
       </div>
@@ -72,7 +72,7 @@ export default function GowthamAppointmentPage() {
                   Appointment Request Submitted!
                 </h3>
                 <p style={{ fontSize: '16px', color: '#555', marginBottom: '25px', lineHeight: 1.7 }}>
-                  Thank you, <strong>{formData.name}</strong>. We are redirecting you to WhatsApp to finalize your consultation time with Pandith Gowtham. You may also call immediately:
+                  Thank you, <strong>{formData.name}</strong>. We are redirecting you to WhatsApp to finalize your consultation time with Pandith Astrologer. You may also call immediately:
                 </p>
                 <a href={`tel:${brandConfig.phoneRaw}`} className="header-phone-btn">
                   <Phone size={18} />
@@ -86,7 +86,7 @@ export default function GowthamAppointmentPage() {
                     Fill In Your Details for Accurate Horoscope Analysis
                   </h2>
                   <p style={{ fontSize: '14px', color: '#666', marginTop: '6px' }}>
-                    All readings are 100% confidential and conducted by Pandith Gowtham personally.
+                    All readings are 100% confidential and conducted by Pandith Astrologer personally.
                   </p>
                 </div>
 

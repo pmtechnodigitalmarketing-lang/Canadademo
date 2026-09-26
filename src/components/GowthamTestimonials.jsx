@@ -5,25 +5,25 @@ const reviews = [
   {
     name: "alex",
     location: "Canada",
-    text: "Strange things kept happening nightmares, bad luck, constant fear. Pandith Gowtham detected black magic and removed it completely. The darkness lifted instantly. Now I feel safe and free again. His power is real.",
+    text: "Strange things kept happening nightmares, bad luck, constant fear. Pandith Astrologer detected black magic and removed it completely. The darkness lifted instantly. Now I feel safe and free again. His power is real.",
     avatar: "https://pandithgowtham.com/wp-content/uploads/2025/05/image-55.png"
   },
   {
     name: "Courtney Henry",
     location: "Canada",
-    text: "I was drowning in bad luck, failed relationships, constant anxiety. Pandith Gowtham identified dark energy around me. After his powerful removal ritual, peace returned. Now I sleep better, and opportunities flow. Truly saved my life!",
+    text: "I was drowning in bad luck, failed relationships, constant anxiety. Pandith Astrologer identified dark energy around me. After his powerful removal ritual, peace returned. Now I sleep better, and opportunities flow. Truly saved my life!",
     avatar: "https://pandithgowtham.com/wp-content/uploads/2025/05/Ellipse-45.png"
   },
   {
     name: "Henry",
     location: "Canada",
-    text: "After our breakup, I was heartbroken until Pandith Gowtham Ji’s wisdom worked like magic. Within weeks, she returned, full of love and regret. Now we’re happier than ever. His guidance truly mended what I thought was lost forever.",
+    text: "After our breakup, I was heartbroken until Pandith Astrologer Ji’s wisdom worked like magic. Within weeks, she returned, full of love and regret. Now we’re happier than ever. His guidance truly mended what I thought was lost forever.",
     avatar: "https://pandithgowtham.com/wp-content/uploads/2025/05/image-56.png"
   },
   {
     name: "Theresa Webb",
     location: "Canada",
-    text: "My husband was leaving me for another woman, I was shattered. Pandith Gowtham’s guidance and remedies brought him back in weeks. Today, our marriage is stronger than ever. I’ll forever be grateful for this second chance.",
+    text: "My husband was leaving me for another woman, I was shattered. Pandith Astrologer’s guidance and remedies brought him back in weeks. Today, our marriage is stronger than ever. I’ll forever be grateful for this second chance.",
     avatar: "https://pandithgowtham.com/wp-content/uploads/2025/05/Ellipse-41.png"
   }
 ];
@@ -37,7 +37,7 @@ export default function GowthamTestimonials() {
         <div className="img-heading-pill">
           <img 
             src={brandConfig.faviconUrl} 
-            alt="pandith gowtham favicon" 
+            alt="pandith astrologer favicon" 
           />
           <span>testimonials</span>
         </div>
@@ -47,7 +47,7 @@ export default function GowthamTestimonials() {
         </h2>
 
         <p style={{ maxWidth: '800px', margin: '0 auto 35px', color: '#444', fontSize: '15px', lineHeight: 1.7 }}>
-          Our clients’ words speak louder than promises. From love reunions to career breakthroughs, their heartfelt testimonials reveal the life-changing power of Pandith Gowtham’s guidance. Read their journeys—your turn could be next!
+          Our clients’ words speak louder than promises. From love reunions to career breakthroughs, their heartfelt testimonials reveal the life-changing power of Pandith Astrologer’s guidance. Read their journeys—your turn could be next!
         </p>
 
         {/* Reviews Grid */}

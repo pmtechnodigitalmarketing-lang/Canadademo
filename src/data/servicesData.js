@@ -8,7 +8,7 @@ export const servicesData = [
     "image": "/images/services/get-ex-love-back.webp",
     "chakraZodiac": "♋ ♌ ♍",
     "shortDesc": "Re-attract your former partner, dissolve lingering resentment, eliminate outside interference, and rebuild an everlasting sacred bond.",
-    "fullDesc": "Separation and heartbreak leave behind severed astral threads. Pandith Gowtham utilizes powerful Vedic reconnection techniques to dissolve lingering bitterness and reignite fond memories in your ex-partner's heart, opening pathways for a joyous reconciliation.",
+    "fullDesc": "Separation and heartbreak leave behind severed astral threads. Pandith Astrologer utilizes powerful Vedic reconnection techniques to dissolve lingering bitterness and reignite fond memories in your ex-partner's heart, opening pathways for a joyous reconciliation.",
     "remedies": [
       "Akarshan Vedic Ritual",
       "Telepathic Heart Resonance",
@@ -26,7 +26,7 @@ export const servicesData = [
     "image": "/images/services/twin-flame-reunion.webp",
     "chakraZodiac": "♊ ♎ ♓",
     "shortDesc": "Overcome runner-chaser dynamics, karmic spiritual exhaustion, and sudden silences to bring your divine twin flame back into physical union.",
-    "fullDesc": "Twin Flame connections are intense cosmic contracts between two halves of one soul. When karmic baggage or unhealed triggers force the 'runner' into hiding, mundane communication fails. Pandith Gowtham realigns the 5th and 12th astral frequency lines to transmute fear into unconditional mutual surrender.",
+    "fullDesc": "Twin Flame connections are intense cosmic contracts between two halves of one soul. When karmic baggage or unhealed triggers force the 'runner' into hiding, mundane communication fails. Pandith Astrologer realigns the 5th and 12th astral frequency lines to transmute fear into unconditional mutual surrender.",
     "remedies": [
       "Anahata Heart Chakra Alignment",
       "Twin Flame Astral Cord Purge",
@@ -44,7 +44,7 @@ export const servicesData = [
     "image": "/images/services/breakup-problem-solution.webp",
     "chakraZodiac": "♋ ♏ ♓",
     "shortDesc": "Stop a painful breakup before it turns permanent. Heal emotional wounds, clear toxic misunderstandings, and inspire your partner to return willingly.",
-    "fullDesc": "Sudden breakups are frequently triggered by malefic Rahu-Mars transits or negative outside gossip poisoning your partner's mind. Pandith Gowtham diagnoses the exact astrological discord, severs toxic outside interference, and performs distance telepathic heart resonance rites that bring emotional warmth back into your partner's heart.",
+    "fullDesc": "Sudden breakups are frequently triggered by malefic Rahu-Mars transits or negative outside gossip poisoning your partner's mind. Pandith Astrologer diagnoses the exact astrological discord, severs toxic outside interference, and performs distance telepathic heart resonance rites that bring emotional warmth back into your partner's heart.",
     "remedies": [
       "Heart Resonance Reconnection",
       "Third-Party Severing Pooja",
@@ -80,7 +80,7 @@ export const servicesData = [
     "image": "/images/services/divorce-prevention.webp",
     "chakraZodiac": "♋ ♎ ♓",
     "shortDesc": "Halt divorce proceedings, dissolve bitter courtroom conflicts, soften your spouse's hardened stance, and reignite holy marital vows.",
-    "fullDesc": "When a marriage deteriorates to the verge of divorce or signed separation agreements, severe 7th house affliction, Rahu transit, or external hostility is almost always at play. Pandith Gowtham performs potent Vedic Gauri-Shankar and Shiva-Parvati reconciliation rites to dissolve resentment, eliminate third-party legal instigators, and rekindle lifelong marital love.",
+    "fullDesc": "When a marriage deteriorates to the verge of divorce or signed separation agreements, severe 7th house affliction, Rahu transit, or external hostility is almost always at play. Pandith Astrologer performs potent Vedic Gauri-Shankar and Shiva-Parvati reconciliation rites to dissolve resentment, eliminate third-party legal instigators, and rekindle lifelong marital love.",
     "remedies": [
       "Gauri-Shankar Matrimonial Yagya",
       "Legal Battle Pacification Rite",
@@ -98,7 +98,7 @@ export const servicesData = [
     "image": "/images/services/same-sex-love-solutions.webp",
     "chakraZodiac": "♈ ♋ ♎",
     "shortDesc": "Restore harmony in gay, lesbian, and queer partnerships, soften unsupportive friends/family, and heal commitment fears with sacred Vedic love mantras.",
-    "fullDesc": "Vedic astrology recognizes the soul (Atman) beyond gender constructs. Planetary alignments of Venus, Mercury, and the Moon influence emotional sensitivity in same-sex unions. Pandith Gowtham provides compassionate, non-judgmental Vedic remedies to clear negative societal projections and build deep fidelity.",
+    "fullDesc": "Vedic astrology recognizes the soul (Atman) beyond gender constructs. Planetary alignments of Venus, Mercury, and the Moon influence emotional sensitivity in same-sex unions. Pandith Astrologer provides compassionate, non-judgmental Vedic remedies to clear negative societal projections and build deep fidelity.",
     "remedies": [
       "Venusian Shukra Sammohan Pooja",
       "Prana Affinity Balancing",
@@ -206,7 +206,7 @@ export const servicesData = [
     "image": "/images/services/jealous-curses-removal.webp",
     "chakraZodiac": "♊ ♌ ♏",
     "shortDesc": "Neutralize toxic jealousy curses aimed at your prosperity, marriage, or attractiveness, and reverse the negative ill-will back into dust.",
-    "fullDesc": "Deep-seated envy from toxic relatives or professional competitors emits poisonous psychic vibrations that slowly strangle happiness, wealth, and peace of mind. Pandith Gowtham conducts ancient Salt, Camphor, and Kali Dosh Nivaran rituals to dissolve all jealous curses and erect a reflective mirror shield.",
+    "fullDesc": "Deep-seated envy from toxic relatives or professional competitors emits poisonous psychic vibrations that slowly strangle happiness, wealth, and peace of mind. Pandith Astrologer conducts ancient Salt, Camphor, and Kali Dosh Nivaran rituals to dissolve all jealous curses and erect a reflective mirror shield.",
     "remedies": [
       "Kali Dosh Nivaran Homa",
       "Rock Salt & Alum Envy Extraction",
@@ -224,7 +224,7 @@ export const servicesData = [
     "image": "/images/services/evil-spirit-removal.webp",
     "chakraZodiac": "♈ ♏ ♑",
     "shortDesc": "Cleanse haunted spaces, stop disturbing night visions, banish demonic presence, and restore pure spiritual tranquility to your home.",
-    "fullDesc": "When malevolent astral entities, pretas, or wandering spirits attach to a person or residence, occupants suffer terror, sudden freezing chills, violent moods, and terrible nightmares. Pandith Gowtham performs the ancient Maha Kaal Bhairava and Durga Saptashati exorcism rites to cast out all darkness permanently.",
+    "fullDesc": "When malevolent astral entities, pretas, or wandering spirits attach to a person or residence, occupants suffer terror, sudden freezing chills, violent moods, and terrible nightmares. Pandith Astrologer performs the ancient Maha Kaal Bhairava and Durga Saptashati exorcism rites to cast out all darkness permanently.",
     "remedies": [
       "Maha Kaal Bhairava Homam",
       "Durga Saptashati Purification",
@@ -278,7 +278,7 @@ export const servicesData = [
     "image": "/images/services/tarot-card-reading.webp",
     "chakraZodiac": "♊ ♎ ♒",
     "shortDesc": "Unveil immediate answers to pressing crossroads. Gain deep intuitive insights into your partner's true feelings, upcoming career shifts, and hidden opportunities.",
-    "fullDesc": "When you face urgent crossroads and need instant clarity, Pandith Gowtham blends ancient Vedic intuition with sacred Tarot spreads (Celtic Cross, Three-Card Past/Present/Future, Love Resonance). Each card reveals subconscious energies, hidden intentions of people around you, and the most auspicious path forward.",
+    "fullDesc": "When you face urgent crossroads and need instant clarity, Pandith Astrologer blends ancient Vedic intuition with sacred Tarot spreads (Celtic Cross, Three-Card Past/Present/Future, Love Resonance). Each card reveals subconscious energies, hidden intentions of people around you, and the most auspicious path forward.",
     "remedies": [
       "Celtic Cross Life Spread",
       "Love Resonance & Intention Reading",
@@ -332,7 +332,7 @@ export const servicesData = [
     "image": "/images/services/business-success-rituals.webp",
     "chakraZodiac": "♉ ♍ ♐",
     "shortDesc": "Ignite commercial momentum, win multi-million dollar contracts, outpace ruthless competitors, and open overflowing cash registers.",
-    "fullDesc": "Commercial prosperity relies on a strong 10th house (status) and 11th house (cashflow). If afflicted by malefic transits or jealous competitors, sales dry up overnight. Pandith Gowtham conducts ancient Sri Suktam, Vyapar Vriddhi Yantra energizations, and entrance Vastu rituals that turn struggling businesses into thriving goldmines.",
+    "fullDesc": "Commercial prosperity relies on a strong 10th house (status) and 11th house (cashflow). If afflicted by malefic transits or jealous competitors, sales dry up overnight. Pandith Astrologer conducts ancient Sri Suktam, Vyapar Vriddhi Yantra energizations, and entrance Vastu rituals that turn struggling businesses into thriving goldmines.",
     "remedies": [
       "Vyapar Vriddhi Maha Yajna",
       "24K Energized Sri Yantra Installation",
@@ -350,7 +350,7 @@ export const servicesData = [
     "image": "/images/services/lottery-number-guidance.webp",
     "chakraZodiac": "♉ ♍ ♐",
     "shortDesc": "Calculate your individual lucky wealth numbers, auspicious planetary betting hours, and 8th/11th house speculative windfalls.",
-    "fullDesc": "Sudden speculative wealth and jackpot luck are governed by the 5th house (speculation), 8th house (unearned wealth), and 11th house (sudden massive gains), catalyzed by transits of Rahu and Jupiter. Pandith Gowtham performs Sankhya Shastra calculations to reveal your highest personal wealth frequency timelines.",
+    "fullDesc": "Sudden speculative wealth and jackpot luck are governed by the 5th house (speculation), 8th house (unearned wealth), and 11th house (sudden massive gains), catalyzed by transits of Rahu and Jupiter. Pandith Astrologer performs Sankhya Shastra calculations to reveal your highest personal wealth frequency timelines.",
     "remedies": [
       "Kuber-Lakshmi Speculative Pooja",
       "Vedic Radical & Lucky Number Chart",
@@ -422,7 +422,7 @@ export const servicesData = [
     "image": "/images/services/daily-horoscope-reading.webp",
     "chakraZodiac": "♌ ♎ ♐",
     "shortDesc": "Gain clarity on daily planetary shifts, Moon sign influences, favorable timings (Shubh Muhurat), and proactive remedies for all 12 zodiac signs.",
-    "fullDesc": "The transit of the Moon (Chandra Gochar) and swift-moving planets directly impacts your daily moods, financial transactions, and relationship dynamics. Pandith Gowtham provides personalized daily horoscope guidance to help you seize auspicious hours, avoid Rahu Kaal pitfalls, and navigate daily decisions with divine confidence.",
+    "fullDesc": "The transit of the Moon (Chandra Gochar) and swift-moving planets directly impacts your daily moods, financial transactions, and relationship dynamics. Pandith Astrologer provides personalized daily horoscope guidance to help you seize auspicious hours, avoid Rahu Kaal pitfalls, and navigate daily decisions with divine confidence.",
     "remedies": [
       "Personalized Daily Transit Map",
       "Shubh Muhurat Timing Calculation",
@@ -458,7 +458,7 @@ export const servicesData = [
     "image": "/images/services/vedic-astrology-reading.webp",
     "chakraZodiac": "♈ ♉ ♊",
     "shortDesc": "Comprehensive personal consultation with an authentic Indian Pandit. Discover your past karma, current Mahadasha, and future destiny blueprint.",
-    "fullDesc": "Vedic Jyotish is the eye of the Vedas. Pandith Gowtham analyzes your complete Janam Kundli, Navamsa (D9), and Dashamsha (D10) charts to uncover root causes of delays in marriage, career, finance, or health. Receive clear, precise forecasts along with simple, powerful Sattvic remedies that transform difficult planetary periods.",
+    "fullDesc": "Vedic Jyotish is the eye of the Vedas. Pandith Astrologer analyzes your complete Janam Kundli, Navamsa (D9), and Dashamsha (D10) charts to uncover root causes of delays in marriage, career, finance, or health. Receive clear, precise forecasts along with simple, powerful Sattvic remedies that transform difficult planetary periods.",
     "remedies": [
       "Full Janam Kundli Analysis",
       "Mahadasha & Antardasha Timelines",
@@ -512,7 +512,7 @@ export const servicesData = [
     "image": "/images/services/vastu-shastra.webp",
     "chakraZodiac": "♈ ♌ ♑",
     "shortDesc": "Eliminate Vastu Doshas in homes, offices, and plots without demolition. Attract financial prosperity, peaceful sleep, and family vitality.",
-    "fullDesc": "The ancient science of Vastu Shastra balances the Pancha Tattvas (Five Elements: Earth, Water, Fire, Air, Space) within your living and working spaces. Structural imbalances (e.g., kitchen in northeast, master bedroom in southeast) cause chronic debts, domestic tension, and health drains. Pandith Gowtham provides non-destructive remedies using directional yantras, crystals, and elemental harmonizers.",
+    "fullDesc": "The ancient science of Vastu Shastra balances the Pancha Tattvas (Five Elements: Earth, Water, Fire, Air, Space) within your living and working spaces. Structural imbalances (e.g., kitchen in northeast, master bedroom in southeast) cause chronic debts, domestic tension, and health drains. Pandith Astrologer provides non-destructive remedies using directional yantras, crystals, and elemental harmonizers.",
     "remedies": [
       "Vastu Purusha Mandala Alignment",
       "Pyramid & Crystal Energy Grids",
@@ -530,7 +530,7 @@ export const servicesData = [
     "image": "/images/services/gemstone-therapy.webp",
     "chakraZodiac": "♈ ♉ ♌",
     "shortDesc": "Discover your exact life-changing Ratna (Yellow Sapphire, Blue Sapphire, Emerald, Ruby) consecrated through Vedic prana-pratishtha.",
-    "fullDesc": "Wearing the wrong gemstone can amplify negative planetary aspects, while the correct unheated natural gemstone acts as an eternal cosmic receiver, attracting health, royal authority, and immense wealth. Pandith Gowtham calculates your functional benefic planets and prescribes exact carat weights, metals, and fingers.",
+    "fullDesc": "Wearing the wrong gemstone can amplify negative planetary aspects, while the correct unheated natural gemstone acts as an eternal cosmic receiver, attracting health, royal authority, and immense wealth. Pandith Astrologer calculates your functional benefic planets and prescribes exact carat weights, metals, and fingers.",
     "remedies": [
       "Jyotish Ratna Compatibility Analysis",
       "Vedic Prana-Pratishtha Consecration",
@@ -548,7 +548,7 @@ export const servicesData = [
     "image": "/images/services/vedic-numerology.webp",
     "chakraZodiac": "♉ ♍ ♑",
     "shortDesc": "Align your birth number, destiny number, business name, and signature vibration to eliminate karmic debt and attract effortless abundance.",
-    "fullDesc": "In Vedic Sankhya Shastra (Numerology), every number from 1 to 9 is governed by a celestial deity and cosmic frequency. An incompatible name spelling or anti-number vibration can sabotage immense hard work. Pandith Gowtham calculates your radical, destiny, and name numbers, providing exact phonetic corrections that magnetize fame, wealth, and health.",
+    "fullDesc": "In Vedic Sankhya Shastra (Numerology), every number from 1 to 9 is governed by a celestial deity and cosmic frequency. An incompatible name spelling or anti-number vibration can sabotage immense hard work. Pandith Astrologer calculates your radical, destiny, and name numbers, providing exact phonetic corrections that magnetize fame, wealth, and health.",
     "remedies": [
       "Chaldean & Vedic Name Correction",
       "Business Brand Name Numerology",
@@ -584,7 +584,7 @@ export const servicesData = [
     "image": "/images/services/love-marriage-specialist.webp",
     "chakraZodiac": "♈ ♌ ♐",
     "shortDesc": "Dissolve family opposition, convince resistant parents, overcome caste or cultural differences, and unite with your beloved in holy matrimony.",
-    "fullDesc": "When love faces fierce resistance from families, inter-caste differences, or community traditions, 5th and 7th house planetary afflictions like Rahu or Saturn aspecting Venus create rigid obstinacy in relatives. Pandith Gowtham performs Kamakhya Mohini Sankalp poojas and Jupiter-Venus harmony homams to soften opposing hearts and receive wholehearted parental blessings.",
+    "fullDesc": "When love faces fierce resistance from families, inter-caste differences, or community traditions, 5th and 7th house planetary afflictions like Rahu or Saturn aspecting Venus create rigid obstinacy in relatives. Pandith Astrologer performs Kamakhya Mohini Sankalp poojas and Jupiter-Venus harmony homams to soften opposing hearts and receive wholehearted parental blessings.",
     "remedies": [
       "Kamakhya Mohini Sankalpam",
       "Parental Heart Softening Pooja",
@@ -602,7 +602,7 @@ export const servicesData = [
     "image": "/images/services/love-spells.webp",
     "chakraZodiac": "♉ ♎ ♓",
     "shortDesc": "Ignite intense reciprocal attraction, draw your ideal soulmate into your life, and deepen commitment using pure Sattvic white-magic Vedic mantras.",
-    "fullDesc": "Pure Vedic love spells are sacred vibrational alignments, not manipulation. Utilizing sacred Shukra (Venus) and Kamadeva mantras alongside energized rose quartz crystals, Pandith Gowtham channels celestial frequencies that magnetize true soul connection, rekindle lost affection, and create an unbreakable aura of attraction.",
+    "fullDesc": "Pure Vedic love spells are sacred vibrational alignments, not manipulation. Utilizing sacred Shukra (Venus) and Kamadeva mantras alongside energized rose quartz crystals, Pandith Astrologer channels celestial frequencies that magnetize true soul connection, rekindle lost affection, and create an unbreakable aura of attraction.",
     "remedies": [
       "Shukra Beej Mantra Infusion",
       "Kamadeva & Rati Sacred Spell",
@@ -620,7 +620,7 @@ export const servicesData = [
     "image": "/images/services/voodoo-expert.webp",
     "chakraZodiac": "♈ ♏ ♑",
     "shortDesc": "Banish intrusive voodoo doll spells, midnight sleep paralysis, mysterious needles, and dark puppet magic with ancient Aghora & Shiva Kavach rituals.",
-    "fullDesc": "Voodoo manipulation attacks the auric shield through tethered personal items, causing sudden emotional breakdowns, extreme lethargy, and unexplained sickness. Pandith Gowtham performs potent multi-tiered Vedic fire purifications to break all occult tethers and return negative energy to its origin.",
+    "fullDesc": "Voodoo manipulation attacks the auric shield through tethered personal items, causing sudden emotional breakdowns, extreme lethargy, and unexplained sickness. Pandith Astrologer performs potent multi-tiered Vedic fire purifications to break all occult tethers and return negative energy to its origin.",
     "remedies": [
       "Maha Aghora Shiva Homam",
       "Sacred Ash (Vibhuti) Shielding",
@@ -638,7 +638,7 @@ export const servicesData = [
     "image": "/images/services/santeria-removal.webp",
     "chakraZodiac": "♉ ♌ ♏",
     "shortDesc": "Cleanse lingering Santeria curses, graveyard dirt hexes, animal sacrifice residual energy, and dark entity attachments permanently.",
-    "fullDesc": "Santeria and dark Afro-Caribbean ritual hexes frequently target an individual's home stability, mental sanity, and financial liquidity. Pandith Gowtham deploys ancient Vedic Narasimha and Kali Raksha kavach rituals to neutralize foreign occult spells and place an impenetrable divine shield over your family.",
+    "fullDesc": "Santeria and dark Afro-Caribbean ritual hexes frequently target an individual's home stability, mental sanity, and financial liquidity. Pandith Astrologer deploys ancient Vedic Narasimha and Kali Raksha kavach rituals to neutralize foreign occult spells and place an impenetrable divine shield over your family.",
     "remedies": [
       "Lord Narasimha Kavach Homa",
       "Graveyard Dirt & Salt Cleansing",
@@ -656,7 +656,7 @@ export const servicesData = [
     "image": "/images/services/hex-spell-removal.webp",
     "chakraZodiac": "♈ ♏ ♑",
     "shortDesc": "Break dark occult spells, generational curses, witchcraft, sudden misfortune, and spiritual attacks with impenetrable Vedic Kavach shielding.",
-    "fullDesc": "When dark hexes, envy curses, or witchcraft are cast upon an individual or home, it manifests as chronic sleep paralysis, sudden unexplained financial crashes, domestic hysteria, and deteriorating vitality. Pandith Gowtham performs the ancient Maha Bhairava & Pratyangira Devi Homa to burn all dark spells to ashes and seal your aura permanently.",
+    "fullDesc": "When dark hexes, envy curses, or witchcraft are cast upon an individual or home, it manifests as chronic sleep paralysis, sudden unexplained financial crashes, domestic hysteria, and deteriorating vitality. Pandith Astrologer performs the ancient Maha Bhairava & Pratyangira Devi Homa to burn all dark spells to ashes and seal your aura permanently.",
     "remedies": [
       "Maha Pratyangira Devi Homa",
       "Bhairava Raksha Kavach",
@@ -710,7 +710,7 @@ export const servicesData = [
     "image": "/images/services/child-behavior-health.webp",
     "chakraZodiac": "♋ ♍ ♓",
     "shortDesc": "Address children's unexplained anger, hyperactivity, severe exam anxiety, recurring ailments, and digital addiction through Vedic child astrology.",
-    "fullDesc": "Afflictions to Mercury (Budh - intellect) and Moon (Chandra - emotional state), or lingering Baal Arishta doshas, can make brilliant children irritable, rebellious, or chronically sickly. Pandith Gowtham uses gentle, Sattvic Saraswati and Chandra pacifications to bring calmness, sharp memory, and protective vitality.",
+    "fullDesc": "Afflictions to Mercury (Budh - intellect) and Moon (Chandra - emotional state), or lingering Baal Arishta doshas, can make brilliant children irritable, rebellious, or chronically sickly. Pandith Astrologer uses gentle, Sattvic Saraswati and Chandra pacifications to bring calmness, sharp memory, and protective vitality.",
     "remedies": [
       "Saraswati Medha Suktam Pooja",
       "Chandra Balak Shanti Ritual",

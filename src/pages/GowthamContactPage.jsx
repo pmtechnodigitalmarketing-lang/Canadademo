@@ -15,7 +15,7 @@ export default function GowthamContactPage() {
       }}>
         <div className="elementor-container">
           <div className="img-heading-pill" style={{ background: 'rgba(255, 255, 255, 0.15)', boxShadow: 'none' }}>
-            <img src={brandConfig.faviconUrl} alt="Pandith Gowtham" />
+            <img src={brandConfig.faviconUrl} alt="Pandith Astrologer" />
             <span style={{ color: '#ffffff' }}>24/7 Astrological Assistance</span>
           </div>
           <h1 style={{
@@ -26,7 +26,7 @@ export default function GowthamContactPage() {
             color: 'var(--e-global-color-secondary)',
             marginBottom: '10px'
           }}>
-            Contact Pandith Gowtham
+            Contact Pandith Astrologer
           </h1>
           <p style={{ fontSize: '17px', color: 'rgba(255,255,255,0.9)' }}>
             Schedule an in-person consultation in Calgary or a private phone/WhatsApp reading from anywhere.

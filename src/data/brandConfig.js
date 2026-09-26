@@ -1,28 +1,30 @@
 /**
- * Pandith Gowtham - 100% Exact Brand Configuration
+ * Pandith Astrologer - 100% Exact Brand Configuration
  */
 
+import personalDetails from './personalDetails';
+
 export const brandConfig = {
-  brandName: "Pandith GOWTHAM",
-  name: "Pandith Gowtham",
-  title: "Pandith Gowtham: Best Astrologer in Canada Over 25+ Years",
-  phone: "+1 403-431-5226",
-  phoneRaw: "+14034315226",
-  phoneDisplay: "+1 403-431-5226",
-  email: "pandithgowtham23@gmail.com",
-  address: "Calgary, Alberta",
+  brandName: personalDetails.websiteName,
+  name: personalDetails.pandithName,
+  title: `${personalDetails.pandithName}: Best Astrologer in Canada Over 25+ Years`,
+  phone: personalDetails.contactNumber,
+  phoneRaw: personalDetails.contactNumber.replace(/[^0-9+]/g, ''),
+  phoneDisplay: personalDetails.contactNumber,
+  email: personalDetails.email,
+  address: personalDetails.address,
   city: "Calgary",
   province: "Alberta",
   country: "Canada",
-  whatsapp: "14034315226",
-  whatsappUrl: "https://api.whatsapp.com/send?phone=14034315226",
+  whatsapp: personalDetails.whatsappNumber.replace(/[^0-9+]/g, ''),
+  whatsappUrl: `https://api.whatsapp.com/send?phone=${personalDetails.whatsappNumber.replace(/[^0-9]/g, '')}`,
   experienceYears: "25+",
   counterYears: "30+",
   clientsSatisfied: "35k +",
   logoUrl: "https://pandithgowtham.com/wp-content/uploads/2025/04/new-logo.webp",
   faviconUrl: "https://pandithgowtham.com/wp-content/uploads/2025/07/favv.webp",
-  bannerBadge: "Pandith GOWTHAM best services",
-  disclaimer: "Disclaimer :- The astrology consultation and services offered by Pandith Gowtham are solely based on his expertise in astrology and the specific circumstances of your situation. Results may vary from person to person."
+  bannerBadge: `${personalDetails.pandithName} best services`,
+  disclaimer: `Disclaimer :- The astrology consultation and services offered by ${personalDetails.pandithName} are solely based on his expertise in astrology and the specific circumstances of your situation. Results may vary from person to person.`
 };
 
 export default brandConfig;

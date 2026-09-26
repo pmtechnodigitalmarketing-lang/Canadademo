@@ -30,7 +30,7 @@ export default function GowthamLocationDetailPage() {
       }}>
         <div className="elementor-container">
           <div className="img-heading-pill" style={{ background: 'rgba(255, 255, 255, 0.15)', boxShadow: 'none' }}>
-            <img src={brandConfig.faviconUrl} alt="Pandith Gowtham" />
+            <img src={brandConfig.faviconUrl} alt="Pandith Astrologer" />
             <span style={{ color: '#ffffff' }}>Top Rated Astrologer in {city}</span>
           </div>
           <h1 style={{
@@ -44,7 +44,7 @@ export default function GowthamLocationDetailPage() {
             {title}
           </h1>
           <p style={{ fontSize: '17px', color: 'rgba(255,255,255,0.9)' }}>
-            Pandith Gowtham offers guaranteed Vedic astrology, psychic guidance, and spiritual remedies in {city}.
+            Pandith Astrologer offers guaranteed Vedic astrology, psychic guidance, and spiritual remedies in {city}.
           </p>
         </div>
       </div>
@@ -68,7 +68,7 @@ export default function GowthamLocationDetailPage() {
 
             <div>
               <div className="img-heading-pill">
-                <img src={brandConfig.faviconUrl} alt="Pandith Gowtham" />
+                <img src={brandConfig.faviconUrl} alt="Pandith Astrologer" />
                 <span>trusted in {city}</span>
               </div>
 
@@ -77,7 +77,7 @@ export default function GowthamLocationDetailPage() {
               </h2>
 
               <p style={{ fontSize: '16px', color: '#444444', lineHeight: 1.8, marginBottom: '20px' }}>
-                Residents of {city} have relied on Pandith Gowtham for over 25+ years to find definitive answers and fast solutions to emotional heartbreak, black magic effects, marriage turmoil, financial stagnation, and dark energy blockages.
+                Residents of {city} have relied on Pandith Astrologer for over 25+ years to find definitive answers and fast solutions to emotional heartbreak, black magic effects, marriage turmoil, financial stagnation, and dark energy blockages.
               </p>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginBottom: '30px' }}>

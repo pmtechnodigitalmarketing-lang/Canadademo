@@ -4,16 +4,16 @@ import brandConfig from '../data/brandConfig';
 
 const faqs = [
   {
-    q: "How does Pandith Gowtham provide astrological consultations?",
-    a: "Pandith Gowtham offers both confidential in-person consultations in Calgary, Alberta, as well as remote phone and WhatsApp sessions for clients throughout Canada, the US, and worldwide. His readings are conducted with extreme care, precision, and complete privacy."
+    q: "How does Pandith Astrologer provide astrological consultations?",
+    a: "Pandith Astrologer offers both confidential in-person consultations in Calgary, Alberta, as well as remote phone and WhatsApp sessions for clients throughout Canada, the US, and worldwide. His readings are conducted with extreme care, precision, and complete privacy."
   },
   {
-    q: "Can Pandith Gowtham help me get my ex-love back?",
-    a: "Yes. Pandith Gowtham specializes in powerful Vedic love astrology, Vashikaran mantras, and dispute-resolution spiritual rituals designed to clear emotional misunderstandings, dispel negative outside influences, and bring estranged lovers back together."
+    q: "Can Pandith Astrologer help me get my ex-love back?",
+    a: "Yes. Pandith Astrologer specializes in powerful Vedic love astrology, Vashikaran mantras, and dispute-resolution spiritual rituals designed to clear emotional misunderstandings, dispel negative outside influences, and bring estranged lovers back together."
   },
   {
     q: "Is my consultation and personal information kept confidential?",
-    a: "Absolutely 100%. Pandith Gowtham treats all client information, conversations, birth details, and life situations with the highest level of confidentiality and ethical standards. Your privacy is permanently protected."
+    a: "Absolutely 100%. Pandith Astrologer treats all client information, conversations, birth details, and life situations with the highest level of confidentiality and ethical standards. Your privacy is permanently protected."
   },
   {
     q: "How fast can I see results from astrological remedies?",
@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: "How do I know which astrological service I need?",
-    a: "During your initial reading, Pandith Gowtham examines your date of birth, palm, horoscope chart, or aura to diagnose the root cause of your difficulties and recommends the exact remedy that will work most effectively for you."
+    a: "During your initial reading, Pandith Astrologer examines your date of birth, palm, horoscope chart, or aura to diagnose the root cause of your difficulties and recommends the exact remedy that will work most effectively for you."
   }
 ];
 
@@ -40,7 +40,7 @@ export default function GowthamContactFAQ() {
     setSubmitted(true);
     setTimeout(() => {
       // open WhatsApp with message
-      const text = `Hi Pandith Gowtham, my name is ${formData.name}. Phone: ${formData.phone}. Problem: ${formData.message}`;
+      const text = `Hi Pandith Astrologer, my name is ${formData.name}. Phone: ${formData.phone}. Problem: ${formData.message}`;
       window.open(`https://api.whatsapp.com/send?phone=${brandConfig.whatsapp}&text=${encodeURIComponent(text)}`, '_blank');
     }, 800);
   };
@@ -56,7 +56,7 @@ export default function GowthamContactFAQ() {
             <div className="img-heading-pill" style={{ background: 'rgba(255, 255, 255, 0.15)', boxShadow: 'none' }}>
               <img 
                 src={brandConfig.faviconUrl} 
-                alt="Pandith Gowtham" 
+                alt="Pandith Astrologer" 
               />
               <span style={{ color: '#ffffff' }}>connect with guruji</span>
             </div>
@@ -77,7 +77,7 @@ export default function GowthamContactFAQ() {
                 <CheckCircle2 size={54} color="var(--e-global-color-secondary)" style={{ margin: '0 auto 15px' }} />
                 <h4 style={{ fontSize: '22px', fontWeight: 700, marginBottom: '10px' }}>Thank You!</h4>
                 <p style={{ fontSize: '15px', color: 'rgba(255,255,255,0.9)' }}>
-                  Your details have been received. Connecting you to Pandith Gowtham on WhatsApp now...
+                  Your details have been received. Connecting you to Pandith Astrologer on WhatsApp now...
                 </p>
               </div>
             ) : (
@@ -134,7 +134,7 @@ export default function GowthamContactFAQ() {
             <div className="img-heading-pill">
               <img 
                 src={brandConfig.faviconUrl} 
-                alt="Pandith Gowtham" 
+                alt="Pandith Astrologer" 
               />
               <span>frequently asked questions</span>
             </div>

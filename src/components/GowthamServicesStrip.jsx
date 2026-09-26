@@ -44,7 +44,7 @@ export default function GowthamServicesStrip() {
         <div className="img-heading-pill">
           <img 
             src={brandConfig.faviconUrl} 
-            alt="pandith gowtham favicon" 
+            alt="pandith astrologer favicon" 
           />
           <span>{brandConfig.bannerBadge}</span>
         </div>

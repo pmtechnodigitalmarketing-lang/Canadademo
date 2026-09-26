@@ -23,7 +23,7 @@ export default function GowthamFloatingButtons() {
       <a 
         href={`tel:${brandConfig.phoneRaw}`} 
         className="fixed-floating-btn fixed-phone-btn"
-        aria-label="Call Pandith Gowtham Now"
+        aria-label="Call Pandith Astrologer Now"
         title="Call Now"
       >
         <Phone size={24} />
@@ -35,7 +35,7 @@ export default function GowthamFloatingButtons() {
         target="_blank" 
         rel="noopener noreferrer"
         className="fixed-floating-btn fixed-whatsapp-btn"
-        aria-label="Chat on WhatsApp with Pandith Gowtham"
+        aria-label="Chat on WhatsApp with Pandith Astrologer"
         title="WhatsApp Chat"
       >
         <svg 
