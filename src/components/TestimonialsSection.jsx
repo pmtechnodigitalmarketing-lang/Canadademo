@@ -63,15 +63,12 @@ export default function TestimonialsSection() {
         </div>
 
         {/* Testimonials Grid */}
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-          gap: '2rem'
-        }}>
-          {filtered.map((item) => (
-            <article
-              key={item.id}
-              className="card-dark-crimson"
+        <div className="reviews-grid-container">
+          <div className="reviews-grid">
+            {[...filtered, ...filtered].map((item, idx) => (
+              <article
+                key={item.id ? `${item.id}-${idx}` : idx}
+                className="card-dark-crimson reviews-marquee-card"
               style={{
                 display: 'flex',
                 flexDirection: 'column',
@@ -158,8 +155,22 @@ export default function TestimonialsSection() {
                   <span>Verified</span>
                 </div>
               </div>
+
+              {/* Google Symbol on bottom left */}
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" 
+                alt="Google Review" 
+                style={{
+                  position: 'absolute',
+                  bottom: '20px',
+                  left: '20px',
+                  width: '25px',
+                  height: '25px'
+                }}
+              />
             </article>
           ))}
+          </div>
         </div>
 
         {/* Bottom WhatsApp Inquiry Banner */}
