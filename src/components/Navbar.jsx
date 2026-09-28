@@ -332,6 +332,7 @@ export default function Navbar() {
                           ✦ View All Canadian Cities
                         </Link>
                       </li>
+                      <li><Link to="/locations/delta" onClick={closeMenu}>Astrologer in Delta, BC</Link></li>
                       <li><Link to="/locations/calgary" onClick={closeMenu}>Astrologer in Calgary, AB</Link></li>
                       <li><Link to="/locations/edmonton" onClick={closeMenu}>Astrologer in Edmonton, AB</Link></li>
                       <li><Link to="/locations/toronto" onClick={closeMenu}>Astrologer in Toronto, ON</Link></li>

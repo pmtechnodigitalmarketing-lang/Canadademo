@@ -5,7 +5,7 @@ import brandConfig from '../data/brandConfig';
 const faqs = [
   {
     q: `How does ${brandConfig.name} provide astrological consultations?`,
-    a: `${brandConfig.name} offers both confidential in-person consultations in Calgary, Alberta, as well as remote phone and WhatsApp sessions for clients throughout Canada, the US, and worldwide. His readings are conducted with extreme care, precision, and complete privacy.`
+    a: `${brandConfig.name} offers both confidential in-person consultations in Delta, British Columbia, as well as remote phone and WhatsApp sessions for clients throughout Canada, the US, and worldwide. His readings are conducted with extreme care, precision, and complete privacy.`
   },
   {
     q: `Can ${brandConfig.name} help me get my ex-love back?`,

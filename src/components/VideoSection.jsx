@@ -26,7 +26,7 @@ export default function VideoSection() {
         <div className="img-heading-pill">
           <img 
             src={brandConfig.faviconUrl} 
-            alt="pandith astrologer favicon" 
+            alt={`${brandConfig.name} favicon`} 
           />
           <span>testimonials</span>
         </div>

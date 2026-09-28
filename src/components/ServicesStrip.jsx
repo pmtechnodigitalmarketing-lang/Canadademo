@@ -44,7 +44,7 @@ export default function ServicesStrip() {
         <div className="img-heading-pill">
           <img 
             src={brandConfig.faviconUrl} 
-            alt="pandith astrologer favicon" 
+            alt={`${brandConfig.name} favicon`} 
           />
           <span>{brandConfig.bannerBadge}</span>
         </div>

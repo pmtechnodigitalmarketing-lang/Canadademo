@@ -122,7 +122,7 @@ export default function LocationDetail() {
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#2b0404', fontWeight: 600 }}>
                   <CheckCircle size={20} color="var(--e-global-color-primary)" />
-                  <span>In-Person Consultations in Alberta by Prior Appointment</span>
+                  <span>In-Person Consultations in British Columbia by Prior Appointment</span>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#2b0404', fontWeight: 600 }}>
                   <CheckCircle size={20} color="var(--e-global-color-primary)" />

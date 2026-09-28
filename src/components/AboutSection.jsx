@@ -39,7 +39,7 @@ export default function AboutSection({
 
             {/* Paragraph 1 */}
             <p>
-              {brandConfig.name} is a renowned astrologer and psychic reader based in Canada, carrying forward his family’s legacy of astrological wisdom. With forefathers who were esteemed astrologers in India, he developed a deep passion for astrology from a young age. His family has served countless individuals across generations, blending ancient knowledge with modern insights. {brandConfig.name.split(' ').pop()} holds a degree in Vedic astrology and has mastered diverse disciplines, including face reading, horoscope analysis, and palmistry, offering precise future predictions and life guidance.
+              {brandConfig.name} is a renowned astrologer and psychic reader based in Canada, carrying forward his family’s legacy of astrological wisdom. With forefathers who were esteemed astrologers in India, he developed a deep passion for astrology from a young age. His family has served countless individuals across generations, blending ancient knowledge with modern insights. Astrologer Narayan holds a degree in Vedic astrology and has mastered diverse disciplines, including face reading, horoscope analysis, and palmistry, offering precise future predictions and life guidance.
             </p>
 
             {/* Paragraph 2 */}

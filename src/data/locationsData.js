@@ -7,12 +7,35 @@ import brandConfig from './brandConfig';
 
 export const locationsData = [
   {
+    id: "delta",
+    slug: "delta",
+    city: "Delta",
+    province: "British Columbia",
+    image: "/images/locations/vancouver.jpg",
+    isHeadquarters: true,
+    tagline: "Best Astrologer & Psychic Spiritual Healer in Delta & Surrey, BC",
+    description: `${brandConfig.name} offers trusted in-person and confidential remote Vedic astrology consultations across Delta, Surrey, Richmond, Vancouver, and surrounding British Columbia regions.`,
+    address: brandConfig.address,
+    phone: brandConfig.phone,
+    popularServices: [
+      "Get Ex Love Back in Delta",
+      "Husband and Wife Problem Solution in Delta",
+      "Black Magic Removal in Delta",
+      "Psychic Reading in Delta",
+      "Negative Energy Removal in Delta"
+    ],
+    reviewSnippet: {
+      author: "Harpreet & Aman S.",
+      location: "Delta, BC",
+      text: `We were facing severe marriage problems and on the verge of divorce. ${brandConfig.name}'s remedies in Delta brought mutual understanding back into our home. Truly blessed.`
+    }
+  },
+  {
     id: "calgary",
     slug: "calgary",
     city: "Calgary",
     province: "Alberta",
     image: "/images/locations/calgary.jpg",
-    isHeadquarters: true,
     tagline: "Best Astrologer & Psychic Spiritual Healer in Calgary, AB",
     description: `${brandConfig.name} offers trusted in-person and confidential remote Vedic astrology consultations across Calgary, including Downtown Calgary, Beltline, Saddleridge, Taradale, Shawnessy, and surrounding Alberta regions.`,
     address: "700 2nd St SW, Calgary, AB T2P 2W2, Canada",

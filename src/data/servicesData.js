@@ -172,7 +172,7 @@ export const servicesData = [
     "image": "/images/services/evil-eye-removal.webp",
     "chakraZodiac": "♈ ♉ ♊",
     "shortDesc": "Neutralize negative vibrations caused by envious acquaintances, sudden business setbacks, and sudden unexplained relationship tension.",
-    "fullDesc": "When people harbor deep envy or jealousy towards your prosperity, beauty, or happiness, their toxic psychic glance (Buri Nazar) creates immediate disruptions. Master conducts ancient salt, camphor, and Kali mantra rituals to cast off all nazar permanently.",
+    "fullDesc": `When people harbor deep envy or jealousy towards your prosperity, beauty, or happiness, their toxic psychic glance (Buri Nazar) creates immediate disruptions. ${brandConfig.name} conducts ancient salt, camphor, and Kali mantra rituals to cast off all nazar permanently.`,
     "remedies": [
       "Nazar Dosh Nivaran Homa",
       "Consecrated Black Thread (Raksha Sutra)",
@@ -190,7 +190,7 @@ export const servicesData = [
     "image": "/images/services/black-magic-removal.webp",
     "chakraZodiac": "♑ ♒ ♓",
     "shortDesc": "Break lifelong curses, hexes, evil eye, psychic attacks, sudden unexplained illness, and demonic interference permanently.",
-    "fullDesc": "Unexplained financial drops, chronic heaviness, sudden irrational anger, or eerie atmospheres in the home often indicate jealousy-driven black magic or negative entities. Master provides ancient multi-layered Kali & Shiva Kavach rituals to destroy any hex and shield your entire family.",
+    "fullDesc": `Unexplained financial drops, chronic heaviness, sudden irrational anger, or eerie atmospheres in the home often indicate jealousy-driven black magic or negative entities. ${brandConfig.name} provides ancient multi-layered Kali & Shiva Kavach rituals to destroy any hex and shield your entire family.`,
     "remedies": [
       "Maha Sudarshana & Kali Homa",
       "Sacred Protective Kavacham",
@@ -388,7 +388,7 @@ export const servicesData = [
     "image": "/images/services/business-debt-recovery.webp",
     "chakraZodiac": "♈ ♌ ♐",
     "shortDesc": "Recover frozen funds, clear crippling debts, protect business assets, and generate a continuous flow of lucrative new clients.",
-    "fullDesc": "Sudden business insolvency is often caused by an afflicted 8th house (debts) draining the 11th house (revenue). Master conducts the sacred Sri Suktam and Kanakadhara wealth rites to dissolve debt blockages and magnetize profitable contracts.",
+    "fullDesc": `Sudden business insolvency is often caused by an afflicted 8th house (debts) draining the 11th house (revenue). ${brandConfig.name} conducts the sacred Sri Suktam and Kanakadhara wealth rites to dissolve debt blockages and magnetize profitable contracts.`,
     "remedies": [
       "Kanakadhara Stotram Pooja",
       "Sri Yantra 24K Energization",
@@ -406,7 +406,7 @@ export const servicesData = [
     "image": "/images/services/court-cases.webp",
     "chakraZodiac": "♑ ♒ ♓",
     "shortDesc": "Neutralize deceitful false allegations, settle endless litigation, silence hostile enemies, and attain favorable court verdicts.",
-    "fullDesc": "When the 6th house (enemies, debts, and litigation) is provoked by hostile planetary transits, honest individuals get dragged into costly legal disputes. Master invokes Goddess Baglamukhi, the deity who paralyzes false speech and guarantees triumph in justice.",
+    "fullDesc": `When the 6th house (enemies, debts, and litigation) is provoked by hostile planetary transits, honest individuals get dragged into costly legal disputes. ${brandConfig.name} invokes Goddess Baglamukhi, the deity who paralyzes false speech and guarantees triumph in justice.`,
     "remedies": [
       "Maha Baglamukhi Stambhana Pooja",
       "Sudarshana Chakra Shield",

@@ -1,5 +1,5 @@
 /**
- * Pandith Astrologer - 100% Exact Brand Configuration
+ * Narayan Astrologer - Brand Configuration
  */
 
 import personalDetails from './personalDetails';
@@ -14,10 +14,10 @@ export const brandConfig = {
   email: personalDetails.email,
   address: personalDetails.address,
   mainOffice: personalDetails.address,
-  city: "Calgary",
-  province: "Alberta",
+  city: "Delta",
+  province: "British Columbia",
   country: "Canada",
-  whatsapp: personalDetails.whatsappNumber.replace(/[^0-9+]/g, ''),
+  whatsapp: personalDetails.whatsappNumber.replace(/[^0-9]/g, ''),
   whatsappUrl: `https://api.whatsapp.com/send?phone=${personalDetails.whatsappNumber.replace(/[^0-9]/g, '')}`,
   experienceYears: "25+",
   counterYears: "30+",

@@ -29,7 +29,7 @@ export default function Contact() {
             Contact {brandConfig.brandName}
           </h1>
           <p style={{ fontSize: '17px', color: 'rgba(255,255,255,0.9)' }}>
-            Schedule an in-person consultation in Calgary or a private phone/WhatsApp reading from anywhere.
+            Schedule an in-person consultation in Delta, BC or a private phone/WhatsApp reading from anywhere.
           </p>
         </div>
       </div>
@@ -132,7 +132,7 @@ export default function Contact() {
                 <MapPin size={28} />
               </div>
               <h3 style={{ fontSize: '18px', fontWeight: 700, marginBottom: '8px' }}>Location</h3>
-              <p style={{ color: '#666', fontSize: '14px', marginBottom: '5px' }}>{brandConfig.address}, Canada</p>
+              <p style={{ color: '#666', fontSize: '14px', marginBottom: '5px' }}>{brandConfig.address}</p>
               <a 
                 href={`mailto:${brandConfig.email}`} 
                 style={{ color: 'var(--e-global-color-primary)', fontWeight: 600, fontSize: '14.5px' }}
@@ -152,7 +152,7 @@ export default function Contact() {
       <section style={{ padding: '0', background: '#fbf5e8', lineHeight: 0 }}>
         <div style={{ width: '100%', height: '450px', filter: 'grayscale(0.3) contrast(1.1)' }}>
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d322108.92211475726!2d-114.3687228020584!3d51.027299066497745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537170039f843fd5%3A0x266d3bb1b652b63a!2sCalgary%2C%20AB%2C%20Canada!5e0!3m2!1sen!2sin!4v1716531980895!5m2!1sen!2sin"
+            src="https://maps.google.com/maps?q=11875+84+Ave,+Delta,+BC+V4C+2M6,+Canada&t=&z=15&ie=UTF8&iwloc=&output=embed"
             width="100%" 
             height="100%" 
             style={{ border: 0 }} 

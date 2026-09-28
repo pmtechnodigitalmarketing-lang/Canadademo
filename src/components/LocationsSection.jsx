@@ -26,7 +26,7 @@ export default function LocationsSection() {
           </h2>
 
           <p style={{ color: '#444444', fontSize: '15.5px', lineHeight: 1.7, marginTop: '14px' }}>
-            {brandConfig.name} provides trusted Vedic astrology, accurate psychic reading, spiritual healing, and relationship problem solutions across Canada. Available for in-person consultations in Alberta and immediate phone or WhatsApp guidance nationwide.
+            {brandConfig.name} provides trusted Vedic astrology, accurate psychic reading, spiritual healing, and relationship problem solutions across Canada. Available for in-person consultations in British Columbia and immediate phone or WhatsApp guidance nationwide.
           </p>
         </div>
       </div>
