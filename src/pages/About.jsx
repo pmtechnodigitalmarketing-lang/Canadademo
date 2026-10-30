@@ -25,10 +25,10 @@ export default function About() {
             color: 'var(--e-global-color-secondary)',
             marginBottom: '10px'
           }}>
-            About {brandConfig.brandName}
+            About {brandConfig.brandName}: Best Astrologer in Canada
           </h1>
           <p style={{ fontSize: '16px', color: 'rgba(255,255,255,0.9)' }}>
-            Best Astrologer, Psychic Reader &amp; Spiritual Healer in Canada Over {brandConfig.experienceYears} Years
+            Renowned Indian Vedic Astrologer, Psychic Reader &amp; Spiritual Healer with Over {brandConfig.experienceYears} Years Experience Across Canada
           </p>
         </div>
       </div>

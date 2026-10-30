@@ -39,11 +39,11 @@ export default function Locations() {
             color: 'var(--e-global-color-secondary)',
             marginBottom: '12px'
           }}>
-            Our Astrological Locations in Canada
+            Best Astrologer in Canada: Serving All Major Cities
           </h1>
 
           <p style={{ fontSize: '16.5px', color: 'rgba(255,255,255,0.92)', maxWidth: '800px', margin: '0 auto', lineHeight: 1.6 }}>
-            {brandConfig.name} offers confidential in-person appointments in British Columbia and prompt phone &amp; WhatsApp readings across all Canadian provinces and territories. Explore our prominent city hubs below.
+            Searching for a trusted astrologer near me in Canada? {brandConfig.name} offers confidential in-person appointments in British Columbia and prompt phone &amp; WhatsApp readings across Toronto, Brampton, Mississauga, Calgary, Vancouver, Edmonton, Montreal, Ottawa, and all Canadian provinces.
           </p>
         </div>
       </div>

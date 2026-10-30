@@ -182,7 +182,7 @@ export default function Services() {
             marginBottom: '15px',
             lineHeight: 1.2
           }}>
-            All Astrology &amp; Spiritual Services
+            All Vedic Astrology &amp; Spiritual Services in Canada
           </h1>
 
           <p style={{
@@ -192,7 +192,7 @@ export default function Services() {
             margin: '0 auto 30px',
             lineHeight: 1.7
           }}>
-            Every human struggle is rooted in planetary transits, unaligned chakras, karmic debts, or negative spiritual interference. <strong>{brandConfig.name}</strong> provides exact, fast-acting remedies tailored to your birth chart with proven results across Canada.
+            Every human struggle is rooted in planetary transits, unaligned chakras, karmic debts, or negative spiritual interference. Looking for an experienced astrologer near me? <strong>{brandConfig.name}</strong> provides accurate birth chart readings, love problem solutions, black magic removal, palmistry, and psychic guidance across Canada.
           </p>
 
           {/* Search Box */}

@@ -3,8 +3,8 @@ import brandConfig from './brandConfig';
 export const servicesData = [
   {
     "id": "ex-love-back",
-    "title": "Get Ex Love Back",
-    "subtitle": "Rekindle Lost Passion & Reunite",
+    "title": "Get Ex Love Back & Love Problem Solution",
+    "subtitle": "Rekindle Lost Passion, Reunite Fast & Restore Deep Affection",
     "category": "love-relationship",
     "icon": "✨",
     "image": "/images/services/get-ex-love-back.webp",
@@ -39,7 +39,7 @@ export const servicesData = [
   },
   {
     "id": "breakup-problem-solution",
-    "title": "Breakup Problem Solution & Patch Up",
+    "title": "Love Problem Solution & Breakup Patch Up",
     "subtitle": "Heal Sudden Separation & Reconcile With Your Soulmate",
     "category": "love-relationship",
     "icon": "💔",
@@ -183,8 +183,8 @@ export const servicesData = [
   },
   {
     "id": "black-magic-removal",
-    "title": "Black Magic & Curse Removal",
-    "subtitle": "Permanent Shield Against Dark Forces",
+    "title": "Black Magic Removal Expert Near Me",
+    "subtitle": "Permanent Shield Against Dark Forces, Hexes & Evil Spirits",
     "category": "spiritual-protection",
     "icon": "🧿",
     "image": "/images/services/black-magic-removal.webp",
@@ -273,7 +273,7 @@ export const servicesData = [
   },
   {
     "id": "tarot-card-reading",
-    "title": "Tarot Card Reading & Intuitive Guidance",
+    "title": "Psychic Astrologer & Tarot Reading Near Me",
     "subtitle": "Divine Card Spreads for Direct Answers in Love, Career & Future",
     "category": "career-guidance",
     "icon": "🃏",
@@ -291,7 +291,7 @@ export const servicesData = [
   },
   {
     "id": "palmistry-face-reading",
-    "title": "Face Reading, Palmistry & Future Prediction",
+    "title": "Palmistry Reading & Face Reader Astrologer Near Me",
     "subtitle": "Discover Destiny Lines, Facial Omens & Karmic Path",
     "category": "career-guidance",
     "icon": "✋",
@@ -309,7 +309,7 @@ export const servicesData = [
   },
   {
     "id": "career-business-astrology",
-    "title": "Job & Business Problems & Financial Relief",
+    "title": "Career Astrology & Business Problem Solution",
     "subtitle": "Unlock Business Wealth, Promotion & Clear Debts",
     "category": "career-guidance",
     "icon": "💰",
@@ -453,8 +453,8 @@ export const servicesData = [
   },
   {
     "id": "vedic-astrology-reading",
-    "title": "Vedic Astrology & Pandit Consultation",
-    "subtitle": "Accurate Birth Chart (Kundli) Readings & Life Roadmap",
+    "title": "Vedic Astrology Reading & Birth Chart Analysis",
+    "subtitle": "Accurate Birth Chart (Kundli) Readings, Vedic Horoscope & Life Roadmap",
     "category": "indian-vedic",
     "icon": "📜",
     "image": "/images/services/vedic-astrology-reading.webp",
@@ -561,7 +561,7 @@ export const servicesData = [
   },
   {
     "id": "vashikaran-specialist",
-    "title": "Vashikaran Specialist & Akarshan",
+    "title": "Vashikaran Astrologer & Specialist Near Me",
     "subtitle": "Ethical Mind Alignment & Sacred Attraction",
     "category": "indian-vedic",
     "icon": "🔮",

@@ -8,43 +8,43 @@ import WhyChooseUs from '../components/WhyChooseUs';
 
 const legacyServicesData = {
   "/relationship-problems": {
-    title: "Relationship Problems Solution",
-    subtitle: "Resolve Misunderstandings, Arguments & Rekindle Eternal Affection",
+    title: "Love Problem Solution & Relationship Healing",
+    subtitle: "Resolve Misunderstandings, Arguments & Consult Top Love Astrologer in Canada",
     image: "/images/assets/qdlimvfjewyrob9b8rfg.webp",
-    description: `Are you and your partner constantly arguing over trivial matters? Has emotional distance grown between you? ${brandConfig.name} offers profound Vedic horoscope compatibility matching and planetary remedies to eliminate friction and restore true love.`
+    description: `Are you and your partner constantly arguing over trivial matters? Has emotional distance grown between you? As a leading love astrologer in Canada, ${brandConfig.name} offers profound Vedic horoscope compatibility matching, Venusian alignment, and love problem solutions to eliminate friction and restore true love.`
   },
   "/psychic-reading": {
-    title: "Psychic Reading in Canada",
-    subtitle: "Clairvoyant Foresight for Love, Destiny, Career & Finances",
+    title: "Psychic Astrologer & Reading Near Me",
+    subtitle: "Clairvoyant Foresight for Love, Destiny, Career & Future Roadmaps",
     image: "/images/assets/vpvftb7rgcxglzn2a0eg.webp",
-    description: `Receive deep clarity on your past, present, and future. ${brandConfig.name} utilizes inherited clairvoyant psychic perception, palmistry, and Vedic astrology charts to reveal hidden opportunities and protect you from upcoming hardships.`
+    description: `Receive deep clarity on your past, present, and future. Searching for a psychic astrologer near me in Canada? ${brandConfig.name} utilizes inherited clairvoyant psychic perception, palmistry reading, and Vedic astrology charts to reveal hidden opportunities and protect you from upcoming hardships.`
   },
   "/spiritual-cleansing": {
-    title: "Spiritual Healing & Cleansing",
+    title: "Spiritual Healing & Negative Energy Cleansing",
     subtitle: "Restore Inner Harmony, Karmic Balance & Positive Vibrations",
     image: "/images/assets/pqgtjgbbnggd7sja2xsq.webp",
-    description: `Clear emotional distress, chronic anxiety, and heavy psychic burdens with sacred Vedic mantras, chakra balancing, and ancestral spiritual healing performed by ${brandConfig.name}.`
+    description: `Clear emotional distress, chronic anxiety, and heavy psychic burdens with sacred Vedic mantras, chakra balancing, and ancestral spiritual healing performed by ${brandConfig.name} across Canada.`
   },
   "/vashikaran-specialist": {
-    title: "Vashikaran Specialist in Canada",
+    title: "Vashikaran Astrologer & Specialist Near Me",
     subtitle: "Positive Vedic Vashikaran Mantras to Attract Love & Harmony",
     image: "/images/assets/image-14-1.webp",
-    description: "Influence circumstances and attract your beloved ethically using pure, satvik Vedic Vashikaran rituals passed down through generations of revered masters."
+    description: "Looking for an authentic vashikaran astrologer near me? Influence circumstances and attract your beloved ethically using pure, satvik Vedic Vashikaran rituals passed down through generations of revered masters."
   },
   "/get-ex-love-back": {
-    title: "Get Ex Love Back Specialist",
+    title: "Get Ex Love Back & Love Problem Solution Astrologer",
     subtitle: "Bring Back Your Ex Partner & Reignite True Passion Fast",
     image: "/images/assets/qdlimvfjewyrob9b8rfg.webp",
-    description: `Experiencing heartbreak after a sudden separation or breakup? ${brandConfig.name} identifies planetary hindrances causing third-party interference and uses proven love spells and astrological remedies to bring your lover back.`
+    description: `Experiencing heartbreak after a sudden separation or breakup? ${brandConfig.name} is a renowned love problem solution specialist and love astrologer in Canada. He identifies planetary hindrances causing third-party interference and uses proven Vedic love rituals to bring your ex lover back.`
   },
   "/black-magic-removal": {
-    title: "Black Magic & Evil Spirit Removal",
+    title: "Black Magic Removal Expert Near Me",
     subtitle: "Powerful Vedic Protection Against Dark Occult Energies & Hexes",
     image: "/images/assets/hjaobubgx1dq3ngklzsc.webp",
-    description: `If you are suffering from unexplained health problems, business collapses, recurring nightmares, or domestic discord, you may be affected by black magic or evil spirits. ${brandConfig.name} provides guaranteed removal rituals and lifelong shields.`
+    description: `If you are suffering from unexplained health problems, business collapses, recurring nightmares, or domestic discord, you may be affected by black magic or evil spirits. Canada's top black magic removal expert near you provides guaranteed removal rituals and lifelong shields.`
   },
   "/negative-energy-removal": {
-    title: "Negative Energy Removal",
+    title: "Negative Energy Removal & Aura Cleansing",
     subtitle: "Purify Your Aura, Home & Business from Envious Vibrations",
     image: "/images/assets/dnmorazmguyea2a6fwxo.webp",
     description: `Banish lingering dark vibrations, depression, and bad luck. ${brandConfig.name}'s powerful yantras and havans cleanse your living space, inviting wealth, prosperity, and peace of mind.`

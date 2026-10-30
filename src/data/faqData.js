@@ -2,28 +2,36 @@ import brandConfig from './brandConfig';
 
 export const faqData = [
   {
-    question: "How does a remote phone or WhatsApp consultation work?",
-    answer: `Vedic spiritual energy and astrological charts transcend physical distance. You simply connect with ${brandConfig.name} via phone call or WhatsApp. You can share your birth details (date, time, place) or photographs of your palms. ${brandConfig.name} conducts real-time chart analysis and answers all your questions directly with complete depth and warmth.`
+    question: "Who is the best astrologer in Canada for birth chart and horoscope readings?",
+    answer: `${brandConfig.name} is recognized as one of the best astrologers in Canada, with over ${brandConfig.experienceYears} years of generational Vedic wisdom. He provides high-precision birth chart readings (Janam Kundli), planetary transit assessments, and detailed future predictions for career, relationships, financial prosperity, and health across Toronto, Vancouver, Calgary, Brampton, Mississauga, and all Canadian provinces.`
   },
   {
-    question: "What information is needed if I don't know my exact birth time?",
-    answer: `If your birth time is unknown, ${brandConfig.name} uses traditional Vedic Prashna Kundli (horary astrology), palm reading (Hastarekha), and face reading (Samudrika Shastra) to accurately determine your planetary patterns and future roadmap.`
+    question: "How do I find a reliable astrologer near me for an immediate consultation?",
+    answer: `If you are searching for a trusted "astrologer near me", ${brandConfig.name} is available for in-person consultations at his Delta, BC center as well as immediate, confidential phone and WhatsApp consultations across Canada. Simply call our direct hotline at ${brandConfig.phoneDisplay} to schedule a same-day reading.`
   },
   {
-    question: "Are your consultations 100% confidential and private?",
-    answer: `Yes, absolutely. We strictly honor client privacy. Your personal information, relationship matters, family discussions, and remedies remain strictly confidential between you and ${brandConfig.name}.`
+    question: "How can a Vedic birth chart reading and astrology chart analysis help solve my life problems?",
+    answer: "A complete Vedic birth chart reading reveals the exact placements of the nine grahas (planets), 12 astrological houses, and Dasha cycles at the moment of your birth. By analyzing planetary doshas (such as Manglik Dosha, Kaal Sarp Dosha, or Rahu-Ketu transit afflictions), Master Narayan pinpoints the root energetic cause of hardships and prescribes proven Sattvic remedies—sacred mantras, gemstones, and yantras—to restore harmony."
   },
   {
-    question: "How quickly do Vedic love reunion or black magic removal remedies take effect?",
-    answer: "Many clients experience substantial energetic relief, mental clarity, and positive communications within 3 to 7 days. For deeply entrenched karmic issues or generational curses, a full 21-day cycle of dedicated spiritual sadhana and Kavach protection ensures permanent stability."
+    question: "Can an astrologer help with love problem solutions and bringing my ex back?",
+    answer: `Yes, ${brandConfig.name} is a renowned love problem solution specialist and love astrologer in Canada. Using sacred Vedic Akarshan rites, Venusian planetary balancing, and relationship reconciliation poojas, he helps resolve painful breakups, dissolve third-party interference, and restore deep affection and commitment between estranged partners.`
   },
   {
-    question: "Are your remedies safe? Do you use black magic?",
-    answer: `${brandConfig.name} practices exclusively pure, Sattvic Vedic remedies—sacred mantras, yantras, planetary pujas, gemstone therapy, and charity. We NEVER practice harmful dark occultism. Our work is exclusively designed to heal, protect, unite, and elevate your life.`
+    question: "How do I know if I need black magic removal or negative energy cleansing?",
+    answer: "Signs of dark spiritual affliction include sudden severe financial setbacks, constant domestic conflict, chronic unexplained physical fatigue, recurring nightmares, and feelings of heavy suffocating energy in your home or workplace. As a premier black magic removal expert near you, Master Narayan performs powerful Maha Sudarshana and Kali Kavach rituals to annihilate evil eye (buri nazar), hexes, and dark occult energies permanently."
   },
   {
-    question: "Can I book an urgent same-day or emergency consultation?",
-    answer: `Yes. For severe marital crises, sudden emotional distress, or acute dark energy attacks, ${brandConfig.name} offers immediate priority consultations. Simply call our direct hotline ${brandConfig.phoneDisplay} or click the WhatsApp button.`
+    question: "What makes psychic reading and palmistry consultations accurate over phone or WhatsApp?",
+    answer: "Vedic spiritual energy and clairvoyant intuition transcend physical distance. You can send clear photos of both palms via WhatsApp along with your birth date and time. Master Narayan analyzes your palm lines (Hastarekha), face reading markers (Samudrika Shastra), and Prashna Kundli (horary chart) in real time during a confidential phone call, giving you 100% accurate insights."
+  },
+  {
+    question: "What is Vedic Vashikaran and is it safe to use for marriage problems?",
+    answer: `${brandConfig.name} practices exclusively pure, positive Vedic Vashikaran and Sattvic remedies designed to soften resentment, halt divorce proceedings, and rebuild mutual understanding between couples. We never employ harmful or dark occultism. All remedies are 100% safe, benevolent, and aimed at lifelong domestic peace.`
+  },
+  {
+    question: "What is the contact number and consultation process for Master Narayan?",
+    answer: `You can reach ${brandConfig.name} directly at ${brandConfig.phoneDisplay} or via WhatsApp. Consultations are available 7 days a week from 8:00 AM to 10:00 PM. Emergency and priority same-day appointments are accommodated for acute personal distress, marriage crises, or dark energy attacks.`
   }
 ];
 

@@ -57,6 +57,8 @@ export default function ContactFAQ() {
               <img 
                 src={brandConfig.faviconUrl} 
                 alt={brandConfig.brandName} 
+                width="20"
+                height="20"
               />
               <span style={{ color: '#ffffff' }}>connect with {brandConfig.name.toLowerCase()}</span>
             </div>
@@ -85,6 +87,8 @@ export default function ContactFAQ() {
                 <div className="form-group">
                   <input
                     type="text"
+                    id="contact-full-name"
+                    aria-label="Your Full Name"
                     placeholder="Your Name *"
                     required
                     value={formData.name}
@@ -95,6 +99,8 @@ export default function ContactFAQ() {
                 <div className="form-group">
                   <input
                     type="email"
+                    id="contact-email-address"
+                    aria-label="Your Email Address"
                     placeholder="Your Email"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -104,6 +110,8 @@ export default function ContactFAQ() {
                 <div className="form-group">
                   <input
                     type="tel"
+                    id="contact-phone-number"
+                    aria-label="Your Phone Number"
                     placeholder="Phone Number *"
                     required
                     value={formData.phone}
@@ -114,13 +122,15 @@ export default function ContactFAQ() {
                 <div className="form-group">
                   <textarea
                     rows="4"
+                    id="contact-user-message"
+                    aria-label="Describe your problem or question"
                     placeholder="Describe your problem or question..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   />
                 </div>
 
-                <button type="submit" className="form-submit-btn">
+                <button type="submit" className="form-submit-btn" aria-label="Send Message to Master Narayan">
                   <span>SEND MESSAGE</span>
                 </button>
               </form>
@@ -135,6 +145,8 @@ export default function ContactFAQ() {
               <img 
                 src={brandConfig.faviconUrl} 
                 alt={brandConfig.name} 
+                width="20"
+                height="20"
               />
               <span>frequently asked questions</span>
             </div>
@@ -148,9 +160,20 @@ export default function ContactFAQ() {
                 const isOpen = openFaq === index;
                 return (
                   <div key={index} className="faq-accordion-item">
-                    <div 
+                    <button 
+                      type="button"
                       className="faq-accordion-header"
                       onClick={() => setOpenFaq(isOpen ? -1 : index)}
+                      aria-expanded={isOpen}
+                      style={{
+                        width: '100%',
+                        textAlign: 'left',
+                        background: 'none',
+                        border: 'none',
+                        font: 'inherit',
+                        cursor: 'pointer',
+                        padding: 0
+                      }}
                     >
                       <span>{faq.q}</span>
                       {isOpen ? (
@@ -158,7 +181,7 @@ export default function ContactFAQ() {
                       ) : (
                         <ChevronDown size={20} color="#777777" />
                       )}
-                    </div>
+                    </button>
                     {isOpen && (
                       <div className="faq-accordion-body">
                         {faq.a}

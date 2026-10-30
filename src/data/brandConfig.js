@@ -7,7 +7,9 @@ import personalDetails from './personalDetails';
 export const brandConfig = {
   brandName: personalDetails.websiteName,
   name: personalDetails.pandithName,
-  title: `${personalDetails.pandithName}: Best Astrologer in Canada Over 25+ Years`,
+  title: `${personalDetails.pandithName}: Best Astrologer in Canada | Vedic Astrology Reading & Birth Chart Expert`,
+  tagline: "Best Astrologer in Canada - Vedic Astrology Reading & Spiritual Guidance",
+  metaDescription: "Looking for the best astrologer near me in Canada? Narayan Astrologer provides accurate birth chart readings, love problem solutions, black magic removal, and psychic guidance.",
   phone: personalDetails.contactNumber,
   phoneRaw: personalDetails.contactNumber.replace(/[^0-9+]/g, ''),
   phoneDisplay: personalDetails.contactNumber,
@@ -24,7 +26,7 @@ export const brandConfig = {
   clientsSatisfied: "35k +",
   logoUrl: "/images/sacred-icon.svg",
   faviconUrl: "/images/sacred-icon.svg",
-  bannerBadge: `${personalDetails.pandithName} best services`,
+  bannerBadge: "Best Astrologer in Canada - Over 25+ Years Experience",
   disclaimer: `Disclaimer :- The astrology consultation and services offered by ${personalDetails.pandithName} are solely based on his expertise in astrology and the specific circumstances of your situation. Results may vary from person to person.`
 };
 

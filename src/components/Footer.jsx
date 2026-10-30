@@ -52,34 +52,38 @@ export default function Footer() {
               </div>
             </Link>
             <p className="footer-brand-desc">
-              {brandConfig.name} is a renowned astrologer and psychic reader based in {brandConfig.country}, carrying forward his family’s legacy of astrological wisdom, offering precise future predictions and spiritual healing to bring positivity and balance into your life.
+              {brandConfig.name} is the best astrologer in Canada and premier psychic reader, carrying forward five generations of Vedic astrological wisdom. Providing birth chart reading, love problem solutions, black magic removal, and spiritual guidance across Toronto, Vancouver, Brampton, Mississauga, Calgary, and all Canadian provinces.
             </p>
           </div>
 
           {/* Column 2: Quick Links */}
           <div className="footer-col link-col">
-            <h3 className="footer-col-title">Quick Links</h3>
+            <h2 className="footer-col-title">Quick Links</h2>
             <ul className="footer-links">
               <li><Link to="/"><ArrowRight size={14}/> Home</Link></li>
               <li><Link to="/about-us"><ArrowRight size={14}/> About Us</Link></li>
+              <li><Link to="/services"><ArrowRight size={14}/> All Services</Link></li>
+              <li><Link to="/locations"><ArrowRight size={14}/> Canadian Locations</Link></li>
               <li><Link to="/contact-us"><ArrowRight size={14}/> Contact Us</Link></li>
             </ul>
           </div>
 
           {/* Column 3: Astrology Services */}
           <div className="footer-col link-col">
-            <h3 className="footer-col-title">Astrology Services</h3>
+            <h2 className="footer-col-title">Astrology Services</h2>
             <ul className="footer-links">
               <li><Link to="/psychic-reading"><ArrowRight size={14}/> Psychic Reading</Link></li>
               <li><Link to="/get-ex-love-back"><ArrowRight size={14}/> Get Ex Love Back</Link></li>
               <li><Link to="/black-magic-removal"><ArrowRight size={14}/> Black Magic Removal</Link></li>
               <li><Link to="/negative-energy-removal"><ArrowRight size={14}/> Negative Energy Removal</Link></li>
+              <li><Link to="/services/vedic-astrology-reading"><ArrowRight size={14}/> Birth Chart Reading</Link></li>
+              <li><Link to="/vashikaran-specialist"><ArrowRight size={14}/> Vashikaran Specialist</Link></li>
             </ul>
           </div>
 
           {/* Column 4: Contact & CTA */}
           <div className="footer-col contact-col">
-            <h3 className="footer-col-title">Contact Us</h3>
+            <h2 className="footer-col-title">Contact Us</h2>
             <div className="footer-contact-item">
               <Phone size={18} className="footer-icon" />
               <a href={`tel:${brandConfig.phoneRaw}`}>{brandConfig.phoneDisplay}</a>

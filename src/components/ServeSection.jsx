@@ -5,46 +5,46 @@ import brandConfig from '../data/brandConfig';
 
 const servicesList = [
   {
-    title: "psychic reading",
+    title: "Psychic Reading & Astrologer Near Me",
     image: "/images/assets/vpvftb7rgcxglzn2a0eg.webp",
-    alt: "astrologer in Calgary",
+    alt: "Psychic astrologer and psychic reading in Canada",
     link: "/psychic-reading",
-    desc: "Psychic reading is a crucial part of astrology where someone can explore different things by implementing several ancient techniques."
+    desc: "Receive accurate future predictions and clairvoyant insights into soulmates, career breakthroughs, and upcoming destiny crossroads."
   },
   {
-    title: "spiritual healing",
+    title: "Spiritual Healing & Biofield Cleansing",
     image: "/images/assets/pqgtjgbbnggd7sja2xsq.webp",
-    alt: "spiritual healer",
+    alt: "Spiritual healer and biofield chakra healing in Canada",
     link: "/spiritual-cleansing",
-    desc: "Spiritual or energy healing is an ancient practice that can help an individual both physically and mentally."
+    desc: "Purify chronic emotional anxiety, unblock 7 chakras, and restore energetic vitality through sacred Vedic spiritual healing."
   },
   {
-    title: "ex love back",
+    title: "Love Problem Solution & Get Ex Back",
     image: "/images/assets/qdlimvfjewyrob9b8rfg.webp",
-    alt: "get ex love back in Calgary",
+    alt: "Love problem solution and get ex love back specialist in Canada",
     link: "/get-ex-love-back",
-    desc: "A breakup can be very effective if you are still in love with your partner. Even though some situations can be the prime causes."
+    desc: "Heal painful breakups and marriages with ancient Vedic Akarshan and Venusian poojas to reunite with your true partner fast."
   },
   {
-    title: "BLACK MAGIC REMOVAL",
+    title: "Black Magic Removal Expert Near Me",
     image: "/images/assets/hjaobubgx1dq3ngklzsc.webp",
-    alt: "black magic removal",
+    alt: "Black magic removal expert and dark energy protection in Canada",
     link: "/black-magic-removal",
-    desc: "Black magic is an evil act that is mostly practiced out of jealousy. When an individual is jealous of your success."
+    desc: "Break dark occult curses, demonic disturbances, and envious hexes permanently with sacred Maha Sudarshana and Kali Kavach."
   },
   {
-    title: "jealousy and curse removal",
+    title: "Evil Eye & Jealousy Curse Removal",
     image: "/images/assets/lcvmdq6ytk4h3o4pijrf.webp",
-    alt: "evil spirit removal",
+    alt: "Evil eye removal and curse removal specialist in Canada",
     link: "/jealousy-and-curse-removal",
-    desc: "When someone is affected by an evil curse, it can create a lot of issues. In that case, only consulting an expert for curse removal in Canada."
+    desc: "Neutralize toxic envious glance (Buri Nazar) from competitors and family rivals, reversing bad luck into prosperity."
   },
   {
-    title: "NEGATIVE ENERGY REMOVAL",
+    title: "Negative Energy Removal & Protection",
     image: "/images/assets/dnmorazmguyea2a6fwxo.webp",
-    alt: "astrology services",
+    alt: "Negative energy removal and home aura cleansing",
     link: "/negative-energy-removal",
-    desc: "Negative energy is a part of spirituality that can harm an individual in different ways. Even though there’s no evidence in science."
+    desc: "Dispel heavy spiritual blockages, chronic bad luck, and home disharmony with potent Vedic yantras and sacred havans."
   }
 ];
 
@@ -61,11 +61,11 @@ export default function ServeSection() {
           </div>
 
           <h2 className="section-title" style={{ color: 'var(--e-global-color-darkred)' }}>
-            what we serve
+            What We Serve: Vedic Astrology &amp; Spiritual Healing
           </h2>
 
           <p style={{ color: '#2b0404', fontSize: '15px', lineHeight: 1.7, marginBottom: '20px' }}>
-            {brandConfig.name} offers precise horoscope readings, palmistry, face reading, and future predictions to guide your life path. Specializing in love spells, vashikaran, marriage solutions, and black magic removal, he also provides career, business, and spiritual healing services. With ancient wisdom and proven remedies, he brings clarity, protection, and success to your journey.
+            <strong>{brandConfig.name}</strong> provides comprehensive <strong>birth chart readings</strong>, <strong>palmistry</strong>, face reading, and future predictions across Canada. Specializing in <strong>love problem solutions</strong>, <strong>vashikaran</strong>, marriage remedies, and <strong>black magic removal near you</strong>, he delivers authentic Vedic solutions that bring clarity, protection, and lifelong peace.
           </p>
         </div>
 
@@ -79,6 +79,8 @@ export default function ServeSection() {
                 <img 
                   src={service.image} 
                   alt={service.alt} 
+                  width="360"
+                  height="230"
                   loading="lazy"
                 />
 
@@ -86,7 +88,8 @@ export default function ServeSection() {
                 <a 
                   href={`tel:${brandConfig.phoneRaw}`} 
                   className="card-consult-btn"
-                  title="consult now"
+                  title={`Consult Now for ${service.title}`}
+                  aria-label={`Consult Now for ${service.title} via Phone`}
                 >
                   <svg aria-hidden="true" width="14" height="14" viewBox="0 0 512 512" fill="currentColor">
                     <path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"></path>
@@ -108,7 +111,11 @@ export default function ServeSection() {
                 </p>
 
                 <div>
-                  <Link to={service.link} className="card-readmore-btn">
+                  <Link 
+                    to={service.link} 
+                    className="card-readmore-btn"
+                    aria-label={`Read more about ${service.title}`}
+                  >
                     <span>read more</span>
                     <svg aria-hidden="true" width="14" height="14" viewBox="0 0 448 512" fill="currentColor">
                       <path d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z"></path>

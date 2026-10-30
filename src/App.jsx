@@ -1,18 +1,20 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import FloatingButtons from './components/FloatingButtons';
 import ScrollToTop from './components/ScrollToTop';
 
-// Pages
+// Eager Homepage for instant navigation
 import Home from './pages/Home';
-import About from './pages/About';
-import Services from './pages/Services';
-import ServiceDetail from './pages/ServiceDetail';
-import Contact from './pages/Contact';
-import Locations from './pages/Locations';
-import LocationDetail from './pages/LocationDetail';
+
+// Lazy-loaded secondary pages
+const About = lazy(() => import('./pages/About'));
+const Services = lazy(() => import('./pages/Services'));
+const ServiceDetail = lazy(() => import('./pages/ServiceDetail'));
+const Contact = lazy(() => import('./pages/Contact'));
+const Locations = lazy(() => import('./pages/Locations'));
+const LocationDetail = lazy(() => import('./pages/LocationDetail'));
 
 function App() {
   return (
@@ -25,39 +27,41 @@ function App() {
 
         {/* Dynamic Route Content */}
         <main style={{ flexGrow: 1 }}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            
-            {/* About Us */}
-            <Route path="/about-us" element={<About />} />
-            <Route path="/about" element={<Navigate to="/about-us" replace />} />
+          <Suspense fallback={<div style={{ minHeight: '60vh' }} />}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              
+              {/* About Us */}
+              <Route path="/about-us" element={<About />} />
+              <Route path="/about" element={<Navigate to="/about-us" replace />} />
 
-            {/* Individual Exact Services */}
-            <Route path="/relationship-problems" element={<ServiceDetail />} />
-            <Route path="/psychic-reading" element={<ServiceDetail />} />
-            <Route path="/spiritual-cleansing" element={<ServiceDetail />} />
-            <Route path="/vashikaran-specialist" element={<ServiceDetail />} />
-            <Route path="/get-ex-love-back" element={<ServiceDetail />} />
-            <Route path="/black-magic-removal" element={<ServiceDetail />} />
-            <Route path="/negative-energy-removal" element={<ServiceDetail />} />
-            <Route path="/jealousy-and-curse-removal" element={<ServiceDetail />} />
+              {/* Individual Exact Services */}
+              <Route path="/relationship-problems" element={<ServiceDetail />} />
+              <Route path="/psychic-reading" element={<ServiceDetail />} />
+              <Route path="/spiritual-cleansing" element={<ServiceDetail />} />
+              <Route path="/vashikaran-specialist" element={<ServiceDetail />} />
+              <Route path="/get-ex-love-back" element={<ServiceDetail />} />
+              <Route path="/black-magic-removal" element={<ServiceDetail />} />
+              <Route path="/negative-energy-removal" element={<ServiceDetail />} />
+              <Route path="/jealousy-and-curse-removal" element={<ServiceDetail />} />
 
-            {/* Services dedicated page & individual details */}
-            <Route path="/services" element={<Services />} />
-            <Route path="/services/:serviceSlug" element={<ServiceDetail />} />
+              {/* Services dedicated page & individual details */}
+              <Route path="/services" element={<Services />} />
+              <Route path="/services/:serviceSlug" element={<ServiceDetail />} />
 
-            {/* Locations Directory & Individual Cities */}
-            <Route path="/locations" element={<Locations />} />
-            <Route path="/location" element={<Navigate to="/locations" replace />} />
-            <Route path="/locations/:slug" element={<LocationDetail />} />
+              {/* Locations Directory & Individual Cities */}
+              <Route path="/locations" element={<Locations />} />
+              <Route path="/location" element={<Navigate to="/locations" replace />} />
+              <Route path="/locations/:slug" element={<LocationDetail />} />
 
-            {/* Contact & Appointment */}
-            <Route path="/contact-us" element={<Contact />} />
-            <Route path="/contact" element={<Navigate to="/contact-us" replace />} />
+              {/* Contact & Appointment */}
+              <Route path="/contact-us" element={<Contact />} />
+              <Route path="/contact" element={<Navigate to="/contact-us" replace />} />
 
-            {/* Wildcard redirect */}
-            <Route path="*" element={<Navigate to="/" replace />} />
-          </Routes>
+              {/* Wildcard redirect */}
+              <Route path="*" element={<Navigate to="/" replace />} />
+            </Routes>
+          </Suspense>
         </main>
 
         {/* Premium Footer */}

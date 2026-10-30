@@ -3,7 +3,7 @@ import brandConfig from '../data/brandConfig';
 
 export default function AboutSection({ 
   imageSrc = "/images/about-astro.webp", 
-  imageAlt = "about astro" 
+  imageAlt = "Narayan Astrologer - Best Astrologer in Canada" 
 }) {
   return (
     <section className="about-section" id="about">
@@ -39,12 +39,12 @@ export default function AboutSection({
 
             {/* Paragraph 1 */}
             <p>
-              {brandConfig.name} is a renowned astrologer and psychic reader based in Canada, carrying forward his family’s legacy of astrological wisdom. With forefathers who were esteemed astrologers in India, he developed a deep passion for astrology from a young age. His family has served countless individuals across generations, blending ancient knowledge with modern insights. Astrologer Narayan holds a degree in Vedic astrology and has mastered diverse disciplines, including face reading, horoscope analysis, and palmistry, offering precise future predictions and life guidance.
+              <strong>{brandConfig.name}</strong> is widely recognized as the <strong>best astrologer in Canada</strong> and premier <strong>psychic astrologer</strong>, carrying forward five generations of sacred Vedic wisdom. Born into an esteemed lineage of Indian Jyotish masters, he developed deep mastery in planetary science and spiritual energy from an early age. Holding traditional degrees in Vedic Jyotish, Master Narayan specializes in comprehensive <strong>birth chart readings</strong> (Janam Kundli), <strong>vedic horoscope analysis</strong>, <strong>palmistry readings</strong>, and face reading (Samudrika Shastra), delivering uncannily accurate future predictions.
             </p>
 
             {/* Paragraph 2 */}
             <p>
-              Specializing in spiritual and emotional well-being, {brandConfig.name} provides solutions for love problems, marriage issues, and career challenges. His expertise extends to Vashikaran, love spells, and removing negative energies like black magic or dark forces. Clients trust him for his accurate birth chart readings, psychic insights, and effective spiritual healing techniques that bring positivity and balance into their lives.
+              Whether you are searching for a trusted <strong>astrologer near me</strong> for an immediate <strong>love problem solution</strong>, looking to <strong>get your ex love back</strong>, or seeking an authentic <strong>black magic removal expert near me</strong>, {brandConfig.name} offers time-tested Sattvic remedies. His proven rituals—including pure Vedic Vashikaran, planetary dosha pacification (Manglik &amp; Kaal Sarp Dosha), evil eye protection, and biofield chakra healing—have brought peace, prosperity, and joy to over 35,000+ satisfied clients across Canada and worldwide.
             </p>
 
             {/* Experience Counter Box */}
@@ -53,7 +53,7 @@ export default function AboutSection({
                 years of<br />experience
               </span>
               <span className="counter-num">
-                30+
+                {brandConfig.counterYears}
               </span>
             </div>
 
