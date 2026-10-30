@@ -21,7 +21,7 @@ function App() {
     <BrowserRouter>
       <ScrollToTop />
       <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-        
+
         {/* Topbar & Sticky Header */}
         <Navbar />
 
@@ -30,7 +30,7 @@ function App() {
           <Suspense fallback={<div style={{ minHeight: '60vh' }} />}>
             <Routes>
               <Route path="/" element={<Home />} />
-              
+
               {/* About Us */}
               <Route path="/about-us" element={<About />} />
               <Route path="/about" element={<Navigate to="/about-us" replace />} />
